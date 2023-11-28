@@ -59,7 +59,7 @@ public class Main {
         int choice = scanner.nextInt();
 
         if (choice == 1) {
-            System.out.println("Insert your name and surname");
+            System.out.println("Insert your name and last name");
             String clientName = scanner.next();
             String clientSurName = scanner.next();
             Customer customer = new Customer(clientName, clientSurName);
