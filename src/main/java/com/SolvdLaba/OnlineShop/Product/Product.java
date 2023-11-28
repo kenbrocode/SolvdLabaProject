@@ -1,11 +1,15 @@
 package com.SolvdLaba.OnlineShop.Product;
 
+import com.SolvdLaba.OnlineShop.Order.Order;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Product implements Comparable<Product>{
+    public static final Logger LOGGER = LogManager.getLogger(Product.class);
     private static int nextProductId = 1;
     private final int productId;
     private String name;
@@ -64,6 +68,6 @@ public class Product implements Comparable<Product>{
         // String manipulation using StringUtils
         name = StringUtils.capitalize(name);
         name = StringUtils.reverse(name);
-        System.out.println("Modified Product Name: " + name);
+        LOGGER.info("Modified Product Name: " + name);
     }
 }

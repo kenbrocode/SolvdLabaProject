@@ -83,3 +83,28 @@
 03:44:28.184 [main] INFO  - rate: 3
 03:46:23.886 [main] INFO  - Shop created with the name: Feels Good Shop
 03:47:19.321 [main] INFO  - rate: 4
+04:05:59.021 [main] INFO  - Shop created with the name: Feels Good Shop
+04:05:59.028 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+04:05:59.029 [main] INFO  - 	%s  %d
+
+04:05:59.029 [main] INFO  - 	%s  %d
+
+04:05:59.029 [main] INFO  - 	%s  %d
+
+04:05:59.029 [main] INFO  - 	%s  %d
+
+04:05:59.029 [main] INFO  - 	%s  %d
+
+04:06:06.227 [main] INFO  - Here is your orderId: %d
+
+04:06:12.800 [main] INFO  - an update of your order list:
+04:06:12.807 [main] INFO  - Order{orderId=1, customer=1}
+04:06:38.473 [main] INFO  - Validating your account
+04:06:38.476 [main] INFO  - OrderStatus{status='CONFIRMED'}
+04:06:38.477 [main] INFO  - PaymentStatus{status='SUCCEDED'}
+04:06:38.477 [main] INFO  - Your order has been paid, below you can find your receipt
+04:06:38.480 [main] INFO  - Order %d has been shipped by the courier: %s
+
+04:06:40.826 [main] INFO  - rate: 4

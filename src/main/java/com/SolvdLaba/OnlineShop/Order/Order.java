@@ -6,6 +6,8 @@ import com.SolvdLaba.OnlineShop.Person.Customer;
 import com.SolvdLaba.OnlineShop.Product.Stock;
 import com.SolvdLaba.OnlineShop.Shop.Shop;
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,7 +18,7 @@ import java.util.List;
 
 
 public class Order implements Returnable, Exchangable {
-
+    public static final Logger LOGGER = LogManager.getLogger(Order.class);
     private static int nextOrderId = 1;
     private final List<Stock> productList;
     private final int orderId;
@@ -64,9 +66,9 @@ public class Order implements Returnable, Exchangable {
 
     public void removeItem(Stock product){
         if (!productList.remove(product)){
-            System.out.println("no such Item");
+            LOGGER.info("no such Item");
         } else{
-            System.out.println("removed!");
+            LOGGER.info("removed!");
         }
     }
 
@@ -130,18 +132,18 @@ public class Order implements Returnable, Exchangable {
     public void returnOrder(int orderId) {
 
         if (orderId > 0) {
-            System.out.println("Returning order with ID: " + orderId);
+            LOGGER.info("Returning order with ID: " + orderId);
         } else {
-            System.out.println("Invalid order ID!");
+            LOGGER.info("Invalid order ID!");
         }
     }
 
     @Override
     public void exchangeOrder(int orderId, String newProduct) {
         if (orderId > 0) {
-            System.out.println("Exchanging order with ID: " + orderId + " to " + newProduct);
+            LOGGER.info("Exchanging order with ID: " + orderId + " to " + newProduct);
         } else {
-            System.out.println("Invalid order ID!");
+            LOGGER.info("Invalid order ID!");
         }
 
 

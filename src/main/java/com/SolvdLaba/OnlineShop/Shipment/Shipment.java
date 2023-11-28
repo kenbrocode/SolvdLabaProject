@@ -19,7 +19,7 @@ public class Shipment extends Delivery{
 
     public static void ship(Courier courier, Shipment shipment){
         if (shipment.getOrder().getOrderStatus() == OrderStatus.CONFIRMED){
-            System.out.printf("Order %d has been shipped by the courier: %s\n", shipment.order.getOrderId(), courier.getName());
+            LOGGER.info("Order %d has been shipped by the courier: %s\n", shipment.order.getOrderId(), courier.getName());
             courier.removeShipment(shipment);
         } else{
             try{
@@ -39,6 +39,6 @@ public class Shipment extends Delivery{
     }
 
     public void ship(){
-        System.out.println("shipped");
+        LOGGER.info("shipped");
     }
 }

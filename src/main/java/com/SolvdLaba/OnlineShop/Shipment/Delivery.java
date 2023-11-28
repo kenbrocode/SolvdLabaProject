@@ -3,8 +3,11 @@ package com.SolvdLaba.OnlineShop.Shipment;
 import com.SolvdLaba.OnlineShop.Interfaces.Deliverable;
 import com.SolvdLaba.OnlineShop.Order.Order;
 import com.SolvdLaba.OnlineShop.Person.Courier;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Delivery implements Deliverable {
+    public static final Logger LOGGER = LogManager.getLogger(Delivery.class);
     private final String address;
     private final Order order;
     private int deliveryPrice = 15;
@@ -20,8 +23,8 @@ public class Delivery implements Deliverable {
 
     @Override
     public void shipping(Courier courier, Shipment shipment) {
-        System.out.println("Shipping the shipment with details: " + shipment.toString());
-        System.out.println("Using courier: " + courier.getName());
+        LOGGER.info("Shipping the shipment with details: " + shipment.toString());
+        LOGGER.info("Using courier: " + courier.getName());
     }
 
     public int getDeliveryPrice(){

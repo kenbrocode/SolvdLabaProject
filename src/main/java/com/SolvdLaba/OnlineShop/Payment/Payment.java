@@ -7,12 +7,15 @@ import com.SolvdLaba.OnlineShop.Payment.Exception.InsufficientFundsException;
 import com.SolvdLaba.OnlineShop.Payment.Exception.NonExistentAccount;
 import com.SolvdLaba.OnlineShop.Person.Person;
 import com.SolvdLaba.OnlineShop.Payment.Files.AccountFile;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.nio.file.Path;
 import java.util.Set;
 
 
 public class Payment {
+    public static final Logger LOGGER = LogManager.getLogger(Payment.class);
     private static final Set<Account> accounts = AccountFile.parse(Path.of("src/main/java/com/SolvdLaba/OnlineShop/Payment/Files/Accounts").toFile());
     private final Account account;
     private final Person sender;
@@ -32,7 +35,7 @@ public class Payment {
     }
 
     public static boolean validateAccount(Account account){
-        System.out.println("Validating your account");
+        LOGGER.info("Validating your account");
         for (Account account1 : accounts){
             if (account1.getCardNumber() == account.getCardNumber()){
                 return true;

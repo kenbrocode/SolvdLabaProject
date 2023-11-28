@@ -66,7 +66,7 @@ public class Shop implements Orderable, Receivable {
     }
 
     public void showWelcomeMessage(){
-        System.out.printf(
+        LOGGER.info(
                 "Welcome to our beloved %s" +
                         "\nBelow you can find all " +
                         "the available materials:\n", name
@@ -90,19 +90,19 @@ public class Shop implements Orderable, Receivable {
     }
 
     public void showGoodbyeMessage(){
-        System.out.println("Thank you for visiting our shop\n" +
+        LOGGER.info("Thank you for visiting our shop\n" +
                 "You will always be welcome\n" +
                 "Best Wishes");
     }
 
     public void showProductsInShop(){
-        productList.forEach(p -> System.out.printf("\t%s  %d\n", p.getProduct().getName(), p.getProduct().getPrice()));
+        productList.forEach(p -> LOGGER.info("\t%s  %d\n", p.getProduct().getName(), p.getProduct().getPrice()));
     }
 
     public int createOrder(Customer customer){
         Order order = new Order(customer, this);
         orders.add(order);
-        System.out.printf("Here is your orderId: %d\n", order.getOrderId());
+        LOGGER.info("Here is your orderId: %d\n", order.getOrderId());
         return order.getOrderId();
     }
 
@@ -164,9 +164,9 @@ public class Shop implements Orderable, Receivable {
     }
 
     public void showUpdatedOrder(int orderId){
-        System.out.println("an update of your order list:");
+        LOGGER.info("an update of your order list:");
         searchOrder(orderId).showOrder();
-        System.out.println(searchOrder(orderId).toString());
+        LOGGER.info(searchOrder(orderId).toString());
     }
 
     public CustomerType upgradeCustomer(int orderId){
@@ -197,12 +197,12 @@ public class Shop implements Orderable, Receivable {
         applyDiscount(orderId, upgradeCustomer(orderId));
         if (Payment.validateAccount(payment.getAccount()) && payment.pay(order.getTotal())){
             order.setOrderStatus(OrderStatus.CONFIRMED);
-            System.out.println(order.getOrderStatus());
-            System.out.println(payment.getPaymentStatus());
-            System.out.println("Your order has been paid, below you can find your receipt");
+            LOGGER.info(order.getOrderStatus());
+            LOGGER.info(payment.getPaymentStatus());
+            LOGGER.info("Your order has been paid, below you can find your receipt");
             order.printReceipt();
         } else{
-            System.out.println(payment.getPaymentStatus());
+            LOGGER.info(payment.getPaymentStatus());
         }
     }
 
@@ -219,9 +219,9 @@ public class Shop implements Orderable, Receivable {
     @Override
     public void receive(Shipment shipment) {
         if (shipment != null) {
-            System.out.println("Receiving shipment: " + shipment);
+            LOGGER.info("Receiving shipment: " + shipment);
         } else {
-            System.out.println("Invalid shipment details!");
+            LOGGER.info("Invalid shipment details!");
         }
     }
     // Method to write order details to a file
@@ -230,7 +230,7 @@ public class Shop implements Orderable, Receivable {
 
         try {
             FileUtils.writeStringToFile(orderFile, order.toString(), "UTF-8");
-            System.out.println("Order details written to file: " + orderFile.getAbsolutePath());
+            LOGGER.info("Order details written to file: " + orderFile.getAbsolutePath());
         } catch (IOException e) {
             e.printStackTrace();
         }

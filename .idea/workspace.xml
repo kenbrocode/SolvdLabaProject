@@ -5,24 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66d0a3d4-8dd8-47e6-99da-80b11ba2cedf" name="Changes" comment="nn">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/CustomLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Interfaces/Deliverable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Interfaces/Exchangable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Interfaces/Receivable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Interfaces/Returnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Order/Interfaces/Orderable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Interfaces/Orderable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Files/Accounts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Files/Accounts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Person/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Person/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Run/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shipment/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shipment/Delivery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shipment/Shipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shipment/Shipment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shop/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shop/Shop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701130721086</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="nn">
+      <option name="closed" value="true" />
+      <created>1701172183537</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701172183537</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
