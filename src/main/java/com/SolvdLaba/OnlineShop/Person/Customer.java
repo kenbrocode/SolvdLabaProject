@@ -10,6 +10,7 @@ public class Customer extends Person{
     private final int customerId;
     private CustomerType customerType = CustomerType.BASIC;
     private LinkedList<Order> orders;
+    private String address;
 
     public Customer(String clientFirstName, String clientSurname){
         super(clientFirstName, clientSurname);
@@ -51,4 +52,6 @@ public class Customer extends Person{
     public String toString(){
         return String.format("%s %s(%d)", getName(), getSurname(), getCustomerId());
     }
+
+
 }

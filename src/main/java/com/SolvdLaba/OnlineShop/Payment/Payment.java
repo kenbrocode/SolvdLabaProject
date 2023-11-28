@@ -12,7 +12,7 @@ import java.nio.file.Path;
 import java.util.Set;
 
 
-public class Payment{
+public class Payment {
     private static final Set<Account> accounts = AccountFile.parse(Path.of("src/main/java/com/SolvdLaba/OnlineShop/Payment/Files/Accounts").toFile());
     private final Account account;
     private final Person sender;
@@ -53,6 +53,8 @@ public class Payment{
     public int getFunds(){
         return funds;
     }
+
+
 
     public boolean pay(int value){
         if (funds - value >= 0){
@@ -95,4 +97,5 @@ public class Payment{
     public String getAddress(){
         return address;
     }
+
 }

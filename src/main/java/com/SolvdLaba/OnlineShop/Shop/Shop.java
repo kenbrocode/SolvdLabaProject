@@ -1,8 +1,9 @@
 package com.SolvdLaba.OnlineShop.Shop;
 
 
+import com.SolvdLaba.OnlineShop.Interfaces.Receivable;
 import com.SolvdLaba.OnlineShop.Order.Exceptions.OrderNotFoundException;
-import com.SolvdLaba.OnlineShop.Order.Interfaces.Orderable;
+import com.SolvdLaba.OnlineShop.Interfaces.Orderable;
 import com.SolvdLaba.OnlineShop.Order.Order;
 import com.SolvdLaba.OnlineShop.Order.OrderStatus;
 import com.SolvdLaba.OnlineShop.Person.Customer;
@@ -11,27 +12,39 @@ import com.SolvdLaba.OnlineShop.Payment.Payment;
 import com.SolvdLaba.OnlineShop.Product.Exceptions.OutOfStockException;
 import com.SolvdLaba.OnlineShop.Product.Exceptions.ProductNotFoundException;
 import com.SolvdLaba.OnlineShop.Product.Stock;
+import com.SolvdLaba.OnlineShop.Shipment.Shipment;
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.io.File;
+import java.io.IOException;
+import java.util.*;
 
 
-public class Shop implements Orderable {
+public class Shop implements Orderable, Receivable {
 
     private static final Logger LOGGER = LogManager.getLogger(Shop.class);
     private final String name;
     private LinkedList<Order> orders;
     private List<Stock> productList;
+    private Map<Integer, Order> ordersMap;
 
 
     public Shop(String name, List<Stock> productList){
         this.name = name;
         this.productList = productList;
         orders = new LinkedList<>();
+        ordersMap = new HashMap<>();
         LOGGER.info(String.format("Shop created with the name: %s", name));
+    }
+
+    public void addOrderToMap(int orderId, Order order) {
+        ordersMap.put(orderId, order);
+    }
+
+    public Order getOrderById(int orderId) {
+        return ordersMap.get(orderId);
     }
 
     public Shop(String name){
@@ -166,7 +179,7 @@ public class Shop implements Orderable {
         return order.getCustomer().getCustomerType();
     }
 
-    private void applyDiscount(int orderId, CustomerType customerType){
+    protected void applyDiscount(int orderId, CustomerType customerType){
         if (customerType == CustomerType.PRO){
             Order order = searchOrder(orderId);
             int tenPercent = (int) (order.getTotal() * 0.1);
@@ -203,6 +216,25 @@ public class Shop implements Orderable {
         return this.equals(obj);
     }
 
+    @Override
+    public void receive(Shipment shipment) {
+        if (shipment != null) {
+            System.out.println("Receiving shipment: " + shipment);
+        } else {
+            System.out.println("Invalid shipment details!");
+        }
+    }
+    // Method to write order details to a file
+    public void writeOrderToFile(Order order) {
+        File orderFile = new File("orderDetails.txt");
+
+        try {
+            FileUtils.writeStringToFile(orderFile, order.toString(), "UTF-8");
+            System.out.println("Order details written to file: " + orderFile.getAbsolutePath());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     @Override
     public String toString(){
         return "Shop{" +

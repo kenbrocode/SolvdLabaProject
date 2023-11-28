@@ -1,4 +1,4 @@
-package com.SolvdLaba.OnlineShop.Order.Interfaces;
+package com.SolvdLaba.OnlineShop.Interfaces;
 
 import com.SolvdLaba.OnlineShop.Person.Customer;
 

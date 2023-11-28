@@ -1,40 +1,19 @@
 package com.SolvdLaba.OnlineShop.Product;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Product implements Comparable<Product>{
     private static int nextProductId = 1;
     private final int productId;
-    private final String name;
+    private String name;
     private final int price;
     private final Category category;
     private static final List<Stock<Product>> productList = new ArrayList<>();
 
-    static {
-        initializeProducts();
-    }
 
-    private static void initializeProducts() {
-        Product chair = new Product("Chair", 50, Category.HOMEGOODS);
-        Product desk = new Product("Desk", 50, Category.HOMEGOODS);
-        Product pans = new Product("Pans", 50, Category.HOMEGOODS);
-        Product heater = new Product("Heater", 50, Category.HOMEGOODS);
-
-        Product historyBook = new Product("Historybook", 100, Category.BOOKS);
-        Product programmingBook = new Product("Programmingbook", 100, Category.BOOKS);
-        Product niceBook = new Product("Nicebook", 100, Category.BOOKS);
-        Product bookBook = new Product("Bookbook", 100, Category.BOOKS);
-
-        productList.add(new Stock<>(chair, 50));
-        productList.add(new Stock<>(desk, 50));
-        productList.add(new Stock<>(pans, 50));
-        productList.add(new Stock<>(heater, 50));
-        productList.add(new Stock<>(historyBook, 50));
-        productList.add(new Stock<>(programmingBook, 50));
-        productList.add(new Stock<>(niceBook, 50));
-        productList.add(new Stock<>(bookBook, 50));
-    }
 
 
     public Product(String name, int price, Category category){
@@ -79,5 +58,12 @@ public class Product implements Comparable<Product>{
     @Override
     public int compareTo(Product o){
         return this.category.compareTo(o.category);
+    }
+
+    public void manipulateProductName() {
+        // String manipulation using StringUtils
+        name = StringUtils.capitalize(name);
+        name = StringUtils.reverse(name);
+        System.out.println("Modified Product Name: " + name);
     }
 }

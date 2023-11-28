@@ -1,4 +1,4 @@
-package com.SolvdLaba.OnlineShop.Run;
+package com.SolvdLaba.OnlineShop;
 
 
 import com.SolvdLaba.OnlineShop.Person.Courier;
@@ -22,11 +22,28 @@ public class Main {
     }
 
     public static void RunShop() {
-
+//adding products from different cathegories
         List<Stock> productList = new ArrayList<>();
         Product product1 = new Product("Chair", 50, Category.HOMEGOODS);
         Stock stock1 = new Stock(product1,50);
         productList.add(stock1);
+
+        Product product2 = new Product("Desk", 100, Category.HOMEGOODS);
+        Stock stock2 = new Stock(product2, 30);
+        productList.add(stock2);
+
+        Product product3 = new Product("Lamp", 25, Category.HOMEGOODS);
+        Stock stock3 = new Stock(product3, 20);
+        productList.add(stock3);
+
+        Product product4 = new Product("Historybook", 100, Category.BOOKS);
+        Stock stock4 = new Stock(product4, 15);
+        productList.add(stock4);
+
+        Product product5 = new Product("Smartphone", 500, Category.ELECTRONICS);
+        Stock stock5 = new Stock(product5, 10);
+        productList.add(stock5);
+
 
 
         System.out.println("product list: "+productList);
@@ -36,8 +53,8 @@ public class Main {
         Shop shop = new Shop("Feels Good Shop", productList);
         shop.showWelcomeMessage();
         shop.showProductsInShop();
+        try (Scanner scanner = new Scanner(System.in)) {
 
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Would you like to create an order?\n\t1- yes\n\t0- no");
         int choice = scanner.nextInt();
 
@@ -46,7 +63,9 @@ public class Main {
             String clientName = scanner.next();
             String clientSurName = scanner.next();
             Customer customer = new Customer(clientName, clientSurName);
+
             int orderId = shop.createOrder(customer);
+            shop.addOrderToMap(orderId, shop.searchOrder(orderId));
 
             boolean stop = false;
 
@@ -65,17 +84,19 @@ public class Main {
             System.out.println("An update on your order:");
             shop.showUpdatedOrder(orderId);
 
-            System.out.println("Pay for your order: ");
-            System.out.println("Provide your account number:");
-            int accountNumber = scanner.nextInt();
+
+            System.out.println("Payment ");
+            System.out.println("Provide your card number:");
+            int cardNumber = scanner.nextInt();
             System.out.println("Provide your CVV:");
             int cvv = scanner.nextInt();
             System.out.println("Provide your card expiration date (MM/YY):");
             String expirationDate = scanner.next();
-            System.out.println("Provide your shipping address:");
+            System.out.println("Provide your street name:");
             String shippingAddress = scanner.next();
 
-            Account account = new Account(accountNumber, cvv, expirationDate, AccountType.VISA, 100);
+
+            Account account = new Account(cardNumber, cvv, expirationDate, AccountType.VISA, 100);
             account.topUp(500);
             Payment payment = new Payment(account, customer, shop.searchOrder(orderId), shippingAddress);
             shop.confirmOrder(orderId, payment);
@@ -100,6 +121,9 @@ public class Main {
 
             Shop.clientShopRating(rate);
             scanner.close();
+        } } catch (Exception exception) {
+                exception.printStackTrace();
+            }
         }
+
     }
-}

@@ -1,14 +1,21 @@
 package com.SolvdLaba.OnlineShop.Order;
 
+import com.SolvdLaba.OnlineShop.Interfaces.Exchangable;
+import com.SolvdLaba.OnlineShop.Interfaces.Returnable;
 import com.SolvdLaba.OnlineShop.Person.Customer;
 import com.SolvdLaba.OnlineShop.Product.Stock;
 import com.SolvdLaba.OnlineShop.Shop.Shop;
+import org.apache.commons.io.FileUtils;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Order{
+
+public class Order implements Returnable, Exchangable {
 
     private static int nextOrderId = 1;
     private final List<Stock> productList;
@@ -117,5 +124,26 @@ public class Order{
                 "orderId=" + getOrderId() +
                 ", customer=" + customer.getCustomerId() +
                 '}';
+    }
+
+    @Override
+    public void returnOrder(int orderId) {
+
+        if (orderId > 0) {
+            System.out.println("Returning order with ID: " + orderId);
+        } else {
+            System.out.println("Invalid order ID!");
+        }
+    }
+
+    @Override
+    public void exchangeOrder(int orderId, String newProduct) {
+        if (orderId > 0) {
+            System.out.println("Exchanging order with ID: " + orderId + " to " + newProduct);
+        } else {
+            System.out.println("Invalid order ID!");
+        }
+
+
     }
 }
