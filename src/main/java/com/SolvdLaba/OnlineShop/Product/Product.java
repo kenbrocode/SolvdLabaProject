@@ -16,10 +16,10 @@ public class Product implements Comparable<Product>{
     }
 
     private static void initializeProducts() {
-        Product chair = new Product("Chair", 50, Category.HOUSE);
-        Product desk = new Product("Desk", 50, Category.HOUSE);
-        Product pans = new Product("Pans", 50, Category.HOUSE);
-        Product heater = new Product("Heater", 50, Category.HOUSE);
+        Product chair = new Product("Chair", 50, Category.HOMEGOODS);
+        Product desk = new Product("Desk", 50, Category.HOMEGOODS);
+        Product pans = new Product("Pans", 50, Category.HOMEGOODS);
+        Product heater = new Product("Heater", 50, Category.HOMEGOODS);
 
         Product historyBook = new Product("Historybook", 100, Category.BOOKS);
         Product programmingBook = new Product("Programmingbook", 100, Category.BOOKS);

@@ -1,7 +1,7 @@
 package com.SolvdLaba.OnlineShop.Product;
 
 public enum Category{
-    HOUSE("HOUSE"), BOOKS("BOOKS"), ELECTRONICS("ELECTRONICS");
+    HOMEGOODS("HOMEGOODS"), BOOKS("BOOKS"), ELECTRONICS("ELECTRONICS");
 
     String attributedValue;
 

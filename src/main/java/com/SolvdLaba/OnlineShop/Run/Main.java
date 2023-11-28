@@ -4,14 +4,15 @@ package com.SolvdLaba.OnlineShop.Run;
 import com.SolvdLaba.OnlineShop.Person.Courier;
 import com.SolvdLaba.OnlineShop.Person.Customer;
 import com.SolvdLaba.OnlineShop.Shop.Shop;
+import com.SolvdLaba.OnlineShop.Product.Category;
+import com.SolvdLaba.OnlineShop.Product.Product;
 import com.SolvdLaba.OnlineShop.Payment.Account;
 import com.SolvdLaba.OnlineShop.Payment.AccountType;
 import com.SolvdLaba.OnlineShop.Payment.Payment;
-import com.SolvdLaba.OnlineShop.Product.Files.ProductFile;
 import com.SolvdLaba.OnlineShop.Product.Stock;
 import com.SolvdLaba.OnlineShop.Shipment.Shipment;
 
-import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -21,7 +22,16 @@ public class Main {
     }
 
     public static void RunShop() {
-        List<Stock> productList = ProductFile.parse(Path.of("src/main/java/com/SolvdLaba/OnlineShop/Product/Files/ProductsFile").toFile());
+
+        List<Stock> productList = new ArrayList<>();
+        Product product1 = new Product("Chair", 50, Category.HOMEGOODS);
+        Stock stock1 = new Stock(product1,50);
+        productList.add(stock1);
+
+
+        System.out.println("product list: "+productList);
+
+
 
         Shop shop = new Shop("Feels Good Shop", productList);
         shop.showWelcomeMessage();

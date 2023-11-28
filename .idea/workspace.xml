@@ -4,47 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66d0a3d4-8dd8-47e6-99da-80b11ba2cedf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Order/Exceptions/OrderNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Order/Interfaces/Orderable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Order/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Order/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/AccountType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Exception/InsufficientFundsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Exception/NonExistentAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Files/AccountFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Files/Accounts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/PaymentStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Person/Courier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Person/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Person/CustomerType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Person/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Exceptions/OutOfStockException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Exceptions/ProductNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Files/ProductFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Files/ProductsFile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Run/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shipment/CustomExceptions/ShipmentNotPaidException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shipment/Delivery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shipment/Shipment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shop/InvalidRatingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shop/Shop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
+    <list default="true" id="66d0a3d4-8dd8-47e6-99da-80b11ba2cedf" name="Changes" comment="nn">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Files/ProductFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Files/ProductsFile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Run/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Run/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,15 +91,33 @@
       <option name="presentableId" value="Default" />
       <updated>1701060077397</updated>
     </task>
+    <task id="LOCAL-00001" summary="nn">
+      <option name="closed" value="true" />
+      <created>1701129392442</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701129392442</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="nn" />
+    <option name="LAST_COMMIT_MESSAGE" value="nn" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Run/Main.java</url>
-          <line>17</line>
+          <line>20</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Run/Main.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
