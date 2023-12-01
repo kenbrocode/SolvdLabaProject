@@ -20,9 +20,9 @@ import java.util.List;
 public class Order implements Returnable, Exchangable {
     public static final Logger LOGGER = LogManager.getLogger(Order.class);
     private static int nextOrderId = 1;
-    private final List<Stock> productList;
-    private final int orderId;
-    private final Shop shop;
+    private List<Stock> productList;
+    private int orderId;
+    private Shop shop;
     private OrderStatus orderStatus;
     private int total = 0;
     private Customer customer;

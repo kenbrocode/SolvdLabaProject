@@ -1,8 +1,8 @@
 package com.SolvdLaba.OnlineShop.Person;
 
 public abstract class Person{
-    private final String name;
-    private final String surname;
+    private String name;
+    private String surname;
 
     public Person(String name, String surname){
         this.name = name;

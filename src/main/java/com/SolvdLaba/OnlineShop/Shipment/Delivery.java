@@ -8,8 +8,8 @@ import org.apache.logging.log4j.Logger;
 
 public class Delivery implements Deliverable {
     public static final Logger LOGGER = LogManager.getLogger(Delivery.class);
-    private final String address;
-    private final Order order;
+    private String address;
+    private Order order;
     private int deliveryPrice = 15;
 
     public Delivery(String address, Order order){

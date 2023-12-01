@@ -4,10 +4,10 @@ import com.SolvdLaba.OnlineShop.Person.Person;
 
 public class Account{
 
-    private final long cardNumber;
-    private final int threeNumBackCode;
-    private final String expirationDate;
-    private final AccountType accountType;
+    private long cardNumber;
+    private int threeNumBackCode;
+    private String expirationDate;
+    private AccountType accountType;
     private int funds;
 
     private Person user;

@@ -8,14 +8,14 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Product implements Comparable<Product>{
+public class Product {
     public static final Logger LOGGER = LogManager.getLogger(Product.class);
     private static int nextProductId = 1;
-    private final int productId;
+    private int productId;
     private String name;
-    private final int price;
-    private final Category category;
-    private static final List<Stock<Product>> productList = new ArrayList<>();
+    private int price;
+    private Category category;
+    private static List<Stock<Product>> productList = new ArrayList<>();
 
 
 
@@ -59,10 +59,6 @@ public class Product implements Comparable<Product>{
         return String.format("Name: %s, price: %d, codeNumber: %d", name, price, getProductId());
     }
 
-    @Override
-    public int compareTo(Product o){
-        return this.category.compareTo(o.category);
-    }
 
     public void manipulateProductName() {
         // String manipulation using StringUtils

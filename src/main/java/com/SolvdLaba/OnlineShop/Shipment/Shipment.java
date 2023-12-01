@@ -8,8 +8,8 @@ import com.SolvdLaba.OnlineShop.Shipment.CustomExceptions.ShipmentNotPaidExcepti
 import com.SolvdLaba.OnlineShop.Shop.Shop;
 
 public class Shipment extends Delivery{
-    private final Order order;
-    private final Shop shop;
+    private Order order;
+    private Shop shop;
 
     public Shipment(String address, Order order, Shop shop){
         super(address, order);

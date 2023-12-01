@@ -4,7 +4,7 @@ public enum AccountType{
 
     VISA("VISA"), MASTERCARD("MASTERCARD"), EXPRESS("EXPRESS");
 
-    private final String accountType;
+    private String accountType;
 
     AccountType(String accountType){
         this.accountType = accountType;

@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66d0a3d4-8dd8-47e6-99da-80b11ba2cedf" name="Changes" comment="Commit">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Order/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/AccountType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/AccountType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Person/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shipment/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shipment/Delivery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shipment/Shipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shipment/Shipment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,29 +34,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2YkCE9VATXyPzSorHYqmEo5Y0ec" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/L-7490/IdeaProjects/SolvdLaba-master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/L-7490/IdeaProjects/SolvdLaba-master&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\L-7490\IdeaProjects\SolvdLaba-master" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\L-7490\IdeaProjects\SolvdLaba-master\target\classes\com" />
+      <recent name="C:\Users\L-7490\IdeaProjects\SolvdLaba-master\target" />
       <recent name="C:\Users\L-7490\IdeaProjects\SolvdLaba-master" />
     </key>
   </component>
@@ -132,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701173312908</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Commit">
+      <option name="closed" value="true" />
+      <created>1701182609071</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701182609071</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -147,11 +168,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Main.java</url>
           <line>20</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Main.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
