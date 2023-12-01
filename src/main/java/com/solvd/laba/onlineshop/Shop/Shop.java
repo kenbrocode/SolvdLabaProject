@@ -29,7 +29,7 @@ public class Shop implements ShopInterface, Orderable, Receivable {
     private final String name;
     private LinkedList<Order> orders;
     private List<Stock> productList;
-    private Map<Integer, Order> ordersMap;
+    private Map<Integer, Order> ordersMap = new HashMap<>();
 
 
     public Shop(String name, List<Stock> productList){
@@ -40,7 +40,7 @@ public class Shop implements ShopInterface, Orderable, Receivable {
         LOGGER.info(String.format("Shop created with the name: %s", name));
     }
 
-    public void addOrderToMap(int orderId, Order order) {
+    public void addOrder(int orderId, Order order) {
         ordersMap.put(orderId, order);
     }
 

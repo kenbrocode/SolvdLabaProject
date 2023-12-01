@@ -1,7 +1,6 @@
 package com.solvd.laba.onlineshop;
 
 
-import com.solvd.laba.onlineshop.Interfaces.ShopInterface;
 import com.solvd.laba.onlineshop.Person.Courier;
 import com.solvd.laba.onlineshop.Person.Customer;
 import com.solvd.laba.onlineshop.Shop.Shop;
@@ -16,6 +15,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.*;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 public class Main {
     private static final Logger LOGGER = LogManager.getLogger(Main.class);
@@ -66,7 +69,7 @@ public class Main {
             Customer customer = new Customer(clientName, clientSurName);
 
             int orderId = shop.createOrder(customer);
-            shop.addOrderToMap(orderId, shop.searchOrder(orderId));
+            shop.addOrder(orderId, shop.searchOrder(orderId));
 
             boolean stop = false;
 
@@ -122,6 +125,18 @@ public class Main {
 
             Shop.clientShopRating(rate);
             scanner.close();
+
+            // Predicate: Check if a product's price is above a certain threshold
+            Predicate<Product> isPriceAboveThreshold = product -> product.getPrice() > 100.0;
+
+// Consumer: Display product details
+            Consumer<Product> displayProductDetails = product -> System.out.println(product.getName() + " - $" + product.getPrice());
+
+// Supplier: Generate a random order ID
+            Supplier<Integer> generateOrderId = () -> (int) (Math.random() * 10000);
+
+// Function: Convert product name to uppercase
+            Function<Product, String> productNameToUppercase = product -> product.getName().toUpperCase();
         } } catch (Exception e) {
             LOGGER.error("An error occurred: " + e.getMessage(), e);
             }

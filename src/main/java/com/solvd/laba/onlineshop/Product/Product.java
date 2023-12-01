@@ -4,6 +4,8 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.function.Function;
+
 public class Product {
     public static final Logger LOGGER = LogManager.getLogger(Product.class);
     private static int nextProductId = 1;
@@ -56,10 +58,5 @@ public class Product {
     }
 
 
-    public void manipulateProductName() {
-        // String manipulation using StringUtils
-        name = StringUtils.capitalize(name);
-        name = StringUtils.reverse(name);
-        LOGGER.info("Modified Product Name: " + name);
-    }
+    Function<Product, String> productNameToUppercase = product -> product.getName().toUpperCase();
 }

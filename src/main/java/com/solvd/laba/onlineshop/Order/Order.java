@@ -17,6 +17,8 @@ public class Order implements Returnable, Exchangable {
     public static final Logger LOGGER = LogManager.getLogger(Order.class);
     private static int nextOrderId = 1;
     private List<Stock> productList;
+
+
     private int orderId;
     private Shop shop;
     private OrderStatus orderStatus;
@@ -30,6 +32,9 @@ public class Order implements Returnable, Exchangable {
         this.customer = customer;
         this.shop = shop;
         customer.getOrders().add(this);
+    }
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
     }
 
     public int getOrderId(){
