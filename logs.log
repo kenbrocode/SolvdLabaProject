@@ -123,7 +123,7 @@ Below you can find all the available materials:
 
 22:35:56.758 [main] INFO  - 	%s  %d
 
-22:36:22.049 [main] INFO  - Product list: Product.com.solvd.laba.onlineshop.Product:DEBUG in 76ed5528
+22:36:22.049 [main] INFO  - Product list: Product.com.solvd.laba.ecommerceshop.Product:DEBUG in 76ed5528
 22:36:22.058 [main] INFO  - Shop created with the name: Feels Good Shop
 22:36:22.061 [main] INFO  - Welcome to our beloved %s
 Below you can find all the available materials:
@@ -178,7 +178,7 @@ Below you can find all the available materials:
 
 22:46:46.405 [main] INFO  - 	%s  %d
 
-22:47:11.118 [main] INFO  - Product list: interface com.solvd.laba.onlineshop.Interfaces.ShopInterface
+22:47:11.118 [main] INFO  - Product list: interface com.solvd.laba.ecommerceshop.Interfaces.ShopInterface
 22:47:11.127 [main] INFO  - Shop created with the name: Feels Good Shop
 22:47:11.130 [main] INFO  - Welcome to our beloved %s
 Below you can find all the available materials:
@@ -456,3 +456,28 @@ Below you can find all the available materials:
 07:06:35.985 [main] INFO  - Order %d has been shipped by the courier: %s
 
 07:06:37.693 [main] INFO  - rate: 4
+07:07:33.752 [main] INFO  - Shop created with the name: Feels Good Shop
+07:07:33.758 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+07:07:33.759 [main] INFO  - 	%s  %d
+
+07:07:33.759 [main] INFO  - 	%s  %d
+
+07:07:33.759 [main] INFO  - 	%s  %d
+
+07:07:33.759 [main] INFO  - 	%s  %d
+
+07:07:33.759 [main] INFO  - 	%s  %d
+
+07:07:38.374 [main] INFO  - Here is your orderId: %d
+
+07:07:44.091 [main] INFO  - an update of your order list:
+07:07:44.099 [main] INFO  - Order{orderId=1, customer=1}
+07:08:07.156 [main] INFO  - Validating your account
+07:08:07.159 [main] INFO  - OrderStatus{status='CONFIRMED'}
+07:08:07.160 [main] INFO  - PaymentStatus{status='SUCCEDED'}
+07:08:07.161 [main] INFO  - Your order has been paid, below you can find your receipt
+07:08:07.164 [main] INFO  - Order %d has been shipped by the courier: %s
+
+07:08:08.082 [main] INFO  - rate: 3
