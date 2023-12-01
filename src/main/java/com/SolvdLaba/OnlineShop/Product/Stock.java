@@ -1,11 +1,11 @@
 package com.SolvdLaba.OnlineShop.Product;
 
-public class Stock<T extends Product>{
+public class Stock {
 
-    private T product;
+    private Product product;
     private int quantity;
 
-    public Stock(T product, int quantity) {
+    public Stock(Product product, int quantity) {
         this.product = product;
         this.quantity = quantity;
     }
@@ -14,7 +14,7 @@ public class Stock<T extends Product>{
         return product;
     }
 
-    public void setProduct(T product){
+    public void setProduct(Product product){
         this.product = product;
     }
 

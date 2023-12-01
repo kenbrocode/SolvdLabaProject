@@ -15,7 +15,7 @@ public class Product {
     private String name;
     private int price;
     private Category category;
-    private static List<Stock<Product>> productList = new ArrayList<>();
+
 
 
 

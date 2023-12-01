@@ -6,17 +6,16 @@ import com.SolvdLaba.OnlineShop.Order.OrderStatus;
 import com.SolvdLaba.OnlineShop.Payment.Exception.InsufficientFundsException;
 import com.SolvdLaba.OnlineShop.Payment.Exception.NonExistentAccount;
 import com.SolvdLaba.OnlineShop.Person.Person;
-import com.SolvdLaba.OnlineShop.Payment.Files.AccountFile;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.nio.file.Path;
+import java.util.HashSet;
 import java.util.Set;
 
 
 public class Payment {
     public static final Logger LOGGER = LogManager.getLogger(Payment.class);
-    private static Set<Account> accounts = AccountFile.parse(Path.of("src/main/java/com/SolvdLaba/OnlineShop/Payment/Files/Accounts").toFile());
+    static Set<Account> accounts = initializeAccounts();
     private Account account;
     private Person sender;
     private int amount;
@@ -24,7 +23,18 @@ public class Payment {
     private String address;
     private PaymentStatus paymentStatus;
     private int funds;
+    private static Set<Account> initializeAccounts() {
+        Set<Account> accounts = new HashSet<>();
 
+        Account account1 = new Account(12345678, 143, "11/26", AccountType.VISA, 109999);
+        Account account2 = new Account(67891456, 648, "10/25", AccountType.MASTERCARD, 9999);
+        Account account3 = new Account(91234567, 112, "11/27", AccountType.MASTERCARD, 10000);
+        accounts.add(account1);
+        accounts.add(account2);
+        accounts.add(account3);
+
+        return accounts;
+    }
     public Payment(Account account, Person sender, Order receipt, String address){
         this.account = account;
         this.sender = sender;

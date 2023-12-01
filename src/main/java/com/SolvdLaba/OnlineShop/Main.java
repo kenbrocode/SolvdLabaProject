@@ -12,9 +12,7 @@ import com.SolvdLaba.OnlineShop.Payment.Payment;
 import com.SolvdLaba.OnlineShop.Product.Stock;
 import com.SolvdLaba.OnlineShop.Shipment.Shipment;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -46,7 +44,8 @@ public class Main {
 
 
 
-        System.out.println("product list: "+productList);
+        System.out.println("Product list: "+productList.toString());
+
 
 
 
