@@ -1,246 +1,140 @@
-13:48:43.873 [main] INFO  - Welcome to our beloved %s
+22:06:55.001 [main] INFO  - Shop created with the name: Feels Good Shop
+22:06:55.015 [main] INFO  - Welcome to our beloved %s
 Below you can find all the available materials:
 
-13:49:21.106 [main] INFO  - Welcome to our beloved %s
+22:06:55.016 [main] INFO  - 	%s  %d
+
+22:06:55.016 [main] INFO  - 	%s  %d
+
+22:06:55.016 [main] INFO  - 	%s  %d
+
+22:06:55.016 [main] INFO  - 	%s  %d
+
+22:06:55.016 [main] INFO  - 	%s  %d
+
+22:06:59.979 [main] INFO  - Here is your orderId: %d
+
+22:07:07.374 [main] INFO  - an update of your order list:
+22:07:07.379 [main] INFO  - Order{orderId=1, customer=1}
+22:08:14.461 [main] INFO  - Validating your account
+22:08:14.465 [main] INFO  - OrderStatus{status='CONFIRMED'}
+22:08:14.465 [main] INFO  - PaymentStatus{status='SUCCEDED'}
+22:08:14.466 [main] INFO  - Your order has been paid, below you can find your receipt
+22:08:14.477 [main] INFO  - Order %d has been shipped by the courier: %s
+
+22:28:05.764 [main] INFO  - Shop created with the name: Feels Good Shop
+22:28:05.773 [main] INFO  - Welcome to our beloved %s
 Below you can find all the available materials:
 
-13:53:17.958 [main] INFO  - Shop created with the name: Feels Good Shop
-13:53:17.964 [main] INFO  - Welcome to our beloved %s
+22:28:05.774 [main] INFO  - 	%s  %d
+
+22:28:05.774 [main] INFO  - 	%s  %d
+
+22:28:05.774 [main] INFO  - 	%s  %d
+
+22:28:05.774 [main] INFO  - 	%s  %d
+
+22:28:05.774 [main] INFO  - 	%s  %d
+
+22:28:11.163 [main] INFO  - Here is your orderId: %d
+
+22:28:16.691 [main] INFO  - an update of your order list:
+22:28:16.698 [main] INFO  - Order{orderId=1, customer=1}
+22:28:44.450 [main] INFO  - Validating your account
+22:28:44.452 [main] INFO  - OrderStatus{status='CONFIRMED'}
+22:28:44.452 [main] INFO  - PaymentStatus{status='SUCCEDED'}
+22:28:44.453 [main] INFO  - Your order has been paid, below you can find your receipt
+22:28:44.459 [main] INFO  - Order %d has been shipped by the courier: %s
+
+22:28:47.044 [main] INFO  - rate: 6
+22:30:10.371 [main] INFO  - Product list: [Stock{product=Name: Chair, price: 50, codeNumber: 1, quantity=50}, Stock{product=Name: Desk, price: 100, codeNumber: 2, quantity=30}, Stock{product=Name: Lamp, price: 25, codeNumber: 3, quantity=20}, Stock{product=Name: Historybook, price: 100, codeNumber: 4, quantity=15}, Stock{product=Name: Smartphone, price: 500, codeNumber: 5, quantity=10}]
+22:30:10.380 [main] INFO  - Shop created with the name: Feels Good Shop
+22:30:10.385 [main] INFO  - Welcome to our beloved %s
 Below you can find all the available materials:
 
-13:53:17.965 [main] INFO  - 	%s  %d
+22:30:10.385 [main] INFO  - 	%s  %d
 
-13:53:17.965 [main] INFO  - 	%s  %d
+22:30:10.386 [main] INFO  - 	%s  %d
 
-13:53:17.965 [main] INFO  - 	%s  %d
+22:30:10.386 [main] INFO  - 	%s  %d
 
-13:53:17.966 [main] INFO  - 	%s  %d
+22:30:10.386 [main] INFO  - 	%s  %d
 
-13:53:17.966 [main] INFO  - 	%s  %d
+22:30:10.386 [main] INFO  - 	%s  %d
 
-13:53:22.693 [main] INFO  - Here is your orderId: %d
+22:30:16.977 [main] INFO  - Here is your orderId: %d
 
-13:53:37.755 [main] INFO  - an update of your order list:
-13:53:37.762 [main] INFO  - Order{orderId=1, customer=1}
-13:54:03.326 [main] INFO  - Validating your account
-13:54:03.328 [main] INFO  - OrderStatus{status='CONFIRMED'}
-13:54:03.329 [main] INFO  - PaymentStatus{status='SUCCEDED'}
-13:54:03.329 [main] INFO  - Your order has been paid, below you can find your receipt
-13:54:03.332 [main] INFO  - Order %d has been shipped by the courier: %s
-
-13:54:05.510 [main] INFO  - rate: 4
-16:24:26.706 [main] INFO  - Shop created with the name: Feels Good Shop
-16:24:26.713 [main] INFO  - Welcome to our beloved %s
+22:30:24.951 [main] INFO  - an update of your order list:
+22:30:24.958 [main] INFO  - Order{orderId=1, customer=1}
+22:31:02.888 [main] INFO  - Product list: [Stock{product=Name: Chair, price: 50, codeNumber: 1, quantity=50}, Stock{product=Name: Desk, price: 100, codeNumber: 2, quantity=30}, Stock{product=Name: Lamp, price: 25, codeNumber: 3, quantity=20}, Stock{product=Name: Historybook, price: 100, codeNumber: 4, quantity=15}, Stock{product=Name: Smartphone, price: 500, codeNumber: 5, quantity=10}]
+22:31:02.898 [main] INFO  - Shop created with the name: Feels Good Shop
+22:31:02.901 [main] INFO  - Welcome to our beloved %s
 Below you can find all the available materials:
 
-16:24:26.715 [main] INFO  - 	%s  %d
+22:31:02.902 [main] INFO  - 	%s  %d
 
-16:24:26.715 [main] INFO  - 	%s  %d
+22:31:02.902 [main] INFO  - 	%s  %d
 
-16:24:26.715 [main] INFO  - 	%s  %d
+22:31:02.902 [main] INFO  - 	%s  %d
 
-16:24:26.715 [main] INFO  - 	%s  %d
+22:31:02.903 [main] INFO  - 	%s  %d
 
-16:24:26.715 [main] INFO  - 	%s  %d
+22:31:02.903 [main] INFO  - 	%s  %d
 
-16:24:33.056 [main] INFO  - Here is your orderId: %d
-
-16:24:38.342 [main] INFO  - an update of your order list:
-16:24:38.350 [main] INFO  - Order{orderId=1, customer=1}
-16:25:11.299 [main] INFO  - Validating your account
-16:25:11.301 [main] INFO  - OrderStatus{status='CONFIRMED'}
-16:25:11.302 [main] INFO  - PaymentStatus{status='SUCCEDED'}
-16:25:11.302 [main] INFO  - Your order has been paid, below you can find your receipt
-16:25:11.305 [main] INFO  - Order %d has been shipped by the courier: %s
-
-16:48:08.878 [main] INFO  - Shop created with the name: Feels Good Shop
-16:48:08.884 [main] INFO  - Welcome to our beloved %s
+22:33:36.639 [main] INFO  - Shop created with the name: Feels Good Shop
+22:33:36.647 [main] INFO  - Welcome to our beloved %s
 Below you can find all the available materials:
 
-16:48:08.885 [main] INFO  - 	%s  %d
+22:33:36.648 [main] INFO  - 	%s  %d
 
-16:48:08.886 [main] INFO  - 	%s  %d
+22:33:36.648 [main] INFO  - 	%s  %d
 
-16:48:08.886 [main] INFO  - 	%s  %d
+22:33:36.648 [main] INFO  - 	%s  %d
 
-16:48:08.886 [main] INFO  - 	%s  %d
+22:33:36.648 [main] INFO  - 	%s  %d
 
-16:48:08.886 [main] INFO  - 	%s  %d
+22:33:36.648 [main] INFO  - 	%s  %d
 
-16:48:13.432 [main] INFO  - Here is your orderId: %d
-
-16:48:19.237 [main] INFO  - an update of your order list:
-16:48:19.243 [main] INFO  - Order{orderId=1, customer=1}
-16:48:30.441 [main] INFO  - Validating your account
-16:48:30.443 [main] INFO  - null
-16:50:41.204 [main] INFO  - Shop created with the name: Feels Good Shop
-16:50:41.210 [main] INFO  - Welcome to our beloved %s
+22:35:15.357 [main] INFO  - Shop created with the name: Feels Good Shop
+22:35:15.364 [main] INFO  - Welcome to our beloved %s
 Below you can find all the available materials:
 
-16:50:41.211 [main] INFO  - 	%s  %d
+22:35:15.365 [main] INFO  - 	%s  %d
 
-16:50:41.211 [main] INFO  - 	%s  %d
+22:35:15.365 [main] INFO  - 	%s  %d
 
-16:50:41.211 [main] INFO  - 	%s  %d
+22:35:15.365 [main] INFO  - 	%s  %d
 
-16:50:41.212 [main] INFO  - 	%s  %d
+22:35:15.365 [main] INFO  - 	%s  %d
 
-16:50:41.212 [main] INFO  - 	%s  %d
+22:35:15.365 [main] INFO  - 	%s  %d
 
-16:50:46.617 [main] INFO  - Here is your orderId: %d
-
-16:50:50.830 [main] INFO  - an update of your order list:
-16:50:50.838 [main] INFO  - Order{orderId=1, customer=1}
-16:51:13.900 [main] INFO  - Validating your account
-16:51:13.902 [main] INFO  - OrderStatus{status='CONFIRMED'}
-16:51:13.902 [main] INFO  - PaymentStatus{status='SUCCEDED'}
-16:51:13.902 [main] INFO  - Your order has been paid, below you can find your receipt
-16:51:13.906 [main] INFO  - Order %d has been shipped by the courier: %s
-
-16:51:15.844 [main] INFO  - rate: 4
-20:43:40.874 [main] INFO  - Shop created with the name: Feels Good Shop
-20:43:40.879 [main] INFO  - Welcome to our beloved %s
+22:35:56.750 [main] INFO  - Shop created with the name: Feels Good Shop
+22:35:56.757 [main] INFO  - Welcome to our beloved %s
 Below you can find all the available materials:
 
-20:43:40.879 [main] INFO  - 	%s  %d
+22:35:56.758 [main] INFO  - 	%s  %d
 
-20:43:40.880 [main] INFO  - 	%s  %d
+22:35:56.758 [main] INFO  - 	%s  %d
 
-20:43:40.880 [main] INFO  - 	%s  %d
+22:35:56.758 [main] INFO  - 	%s  %d
 
-20:43:40.880 [main] INFO  - 	%s  %d
+22:35:56.758 [main] INFO  - 	%s  %d
 
-20:43:40.880 [main] INFO  - 	%s  %d
+22:35:56.758 [main] INFO  - 	%s  %d
 
-20:43:46.105 [main] INFO  - Here is your orderId: %d
-
-20:43:51.784 [main] INFO  - an update of your order list:
-20:43:51.791 [main] INFO  - Order{orderId=1, customer=1}
-20:44:24.032 [main] INFO  - Validating your account
-20:44:24.034 [main] INFO  - OrderStatus{status='CONFIRMED'}
-20:44:24.035 [main] INFO  - PaymentStatus{status='SUCCEDED'}
-20:44:24.036 [main] INFO  - Your order has been paid, below you can find your receipt
-20:44:24.044 [main] INFO  - Order %d has been shipped by the courier: %s
-
-20:44:26.332 [main] INFO  - rate: 4
-20:44:32.602 [main] INFO  - Shop created with the name: Feels Good Shop
-20:44:32.608 [main] INFO  - Welcome to our beloved %s
+22:36:22.049 [main] INFO  - Product list: com.SolvdLaba.OnlineShop.Product.Product:DEBUG in 76ed5528
+22:36:22.058 [main] INFO  - Shop created with the name: Feels Good Shop
+22:36:22.061 [main] INFO  - Welcome to our beloved %s
 Below you can find all the available materials:
 
-20:44:32.609 [main] INFO  - 	%s  %d
+22:36:22.062 [main] INFO  - 	%s  %d
 
-20:44:32.609 [main] INFO  - 	%s  %d
+22:36:22.062 [main] INFO  - 	%s  %d
 
-20:44:32.609 [main] INFO  - 	%s  %d
+22:36:22.062 [main] INFO  - 	%s  %d
 
-20:44:32.609 [main] INFO  - 	%s  %d
+22:36:22.062 [main] INFO  - 	%s  %d
 
-20:44:32.609 [main] INFO  - 	%s  %d
+22:36:22.062 [main] INFO  - 	%s  %d
 
-20:44:38.224 [main] INFO  - Here is your orderId: %d
-
-20:44:44.262 [main] INFO  - an update of your order list:
-20:44:44.271 [main] INFO  - Order{orderId=1, customer=1}
-20:45:02.984 [main] INFO  - Validating your account
-20:45:02.986 [main] INFO  - OrderStatus{status='CONFIRMED'}
-20:45:02.987 [main] INFO  - PaymentStatus{status='SUCCEDED'}
-20:45:02.987 [main] INFO  - Your order has been paid, below you can find your receipt
-20:45:02.990 [main] INFO  - Order %d has been shipped by the courier: %s
-
-20:55:07.124 [main] INFO  - Shop created with the name: Feels Good Shop
-20:55:07.133 [main] INFO  - Welcome to our beloved %s
-Below you can find all the available materials:
-
-20:55:07.134 [main] INFO  - 	%s  %d
-
-20:55:07.135 [main] INFO  - 	%s  %d
-
-20:55:07.135 [main] INFO  - 	%s  %d
-
-20:55:07.135 [main] INFO  - 	%s  %d
-
-20:55:07.135 [main] INFO  - 	%s  %d
-
-21:09:28.739 [main] INFO  - Shop created with the name: Feels Good Shop
-21:09:28.747 [main] INFO  - Welcome to our beloved %s
-Below you can find all the available materials:
-
-21:09:28.748 [main] INFO  - 	%s  %d
-
-21:09:28.748 [main] INFO  - 	%s  %d
-
-21:09:28.748 [main] INFO  - 	%s  %d
-
-21:09:28.748 [main] INFO  - 	%s  %d
-
-21:09:28.748 [main] INFO  - 	%s  %d
-
-21:09:34.581 [main] INFO  - Here is your orderId: %d
-
-21:09:40.395 [main] INFO  - an update of your order list:
-21:09:40.403 [main] INFO  - Order{orderId=1, customer=1}
-21:10:05.316 [main] INFO  - Validating your account
-21:10:05.317 [main] INFO  - null
-21:10:48.737 [main] INFO  - Shop created with the name: Feels Good Shop
-21:10:48.745 [main] INFO  - Welcome to our beloved %s
-Below you can find all the available materials:
-
-21:10:48.746 [main] INFO  - 	%s  %d
-
-21:10:48.746 [main] INFO  - 	%s  %d
-
-21:10:48.746 [main] INFO  - 	%s  %d
-
-21:10:48.746 [main] INFO  - 	%s  %d
-
-21:10:48.747 [main] INFO  - 	%s  %d
-
-21:10:54.221 [main] INFO  - Here is your orderId: %d
-
-21:10:58.739 [main] INFO  - an update of your order list:
-21:10:58.745 [main] INFO  - Order{orderId=1, customer=1}
-21:11:25.437 [main] INFO  - Validating your account
-21:11:25.438 [main] INFO  - null
-21:19:04.562 [main] INFO  - Shop created with the name: Feels Good Shop
-21:19:04.568 [main] INFO  - Welcome to our beloved %s
-Below you can find all the available materials:
-
-21:19:04.568 [main] INFO  - 	%s  %d
-
-21:19:04.569 [main] INFO  - 	%s  %d
-
-21:19:04.569 [main] INFO  - 	%s  %d
-
-21:19:04.569 [main] INFO  - 	%s  %d
-
-21:19:04.569 [main] INFO  - 	%s  %d
-
-21:19:13.392 [main] INFO  - Here is your orderId: %d
-
-21:19:22.733 [main] INFO  - an update of your order list:
-21:19:22.740 [main] INFO  - Order{orderId=1, customer=1}
-21:19:50.734 [main] INFO  - Shop created with the name: Feels Good Shop
-21:19:50.743 [main] INFO  - Welcome to our beloved %s
-Below you can find all the available materials:
-
-21:19:50.744 [main] INFO  - 	%s  %d
-
-21:19:50.744 [main] INFO  - 	%s  %d
-
-21:19:50.744 [main] INFO  - 	%s  %d
-
-21:19:50.744 [main] INFO  - 	%s  %d
-
-21:19:50.744 [main] INFO  - 	%s  %d
-
-21:19:54.939 [main] INFO  - Here is your orderId: %d
-
-21:20:02.873 [main] INFO  - an update of your order list:
-21:20:02.880 [main] INFO  - Order{orderId=1, customer=1}
-21:20:26.644 [main] INFO  - Validating your account
-21:20:26.647 [main] INFO  - OrderStatus{status='CONFIRMED'}
-21:20:26.649 [main] INFO  - PaymentStatus{status='SUCCEDED'}
-21:20:26.650 [main] INFO  - Your order has been paid, below you can find your receipt
-21:20:26.654 [main] INFO  - Order %d has been shipped by the courier: %s
-
-21:20:29.365 [main] INFO  - rate: 5

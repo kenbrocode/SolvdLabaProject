@@ -11,15 +11,16 @@ import com.SolvdLaba.OnlineShop.Payment.AccountType;
 import com.SolvdLaba.OnlineShop.Payment.Payment;
 import com.SolvdLaba.OnlineShop.Product.Stock;
 import com.SolvdLaba.OnlineShop.Shipment.Shipment;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.*;
 
 public class Main {
+    private static final Logger LOGGER = LogManager.getLogger(Main.class);
     public static void main(String[] args) {
-        RunShop();
-    }
 
-    public static void RunShop() {
+
 //adding products from different cathegories
         List<Stock> productList = new ArrayList<>();
         Product product1 = new Product("Chair", 50, Category.HOMEGOODS);
@@ -44,7 +45,7 @@ public class Main {
 
 
 
-        System.out.println("Product list: "+productList.toString());
+       LOGGER.info("Product list: "+productList);
 
 
 
@@ -120,8 +121,8 @@ public class Main {
 
             Shop.clientShopRating(rate);
             scanner.close();
-        } } catch (Exception exception) {
-                exception.printStackTrace();
+        } } catch (Exception e) {
+            LOGGER.error("An error occurred: " + e.getMessage(), e);
             }
         }
 

@@ -20,13 +20,6 @@ public class Account{
         this.funds = funds;
     }
 
-    public Account(long cardNumber, int threeNumBackCode, String expirationDate, AccountType accountType, Person user){
-        this.cardNumber = cardNumber;
-        this.threeNumBackCode = threeNumBackCode;
-        this.expirationDate = expirationDate;
-        this.accountType = accountType;
-        this.user = user;
-    }
 
     public int getFunds(){
         return funds;
