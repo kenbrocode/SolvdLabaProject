@@ -5,38 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66d0a3d4-8dd8-47e6-99da-80b11ba2cedf" name="Changes" comment="Commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Interfaces/ShopInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/CustomLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/CustomLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Interfaces/Deliverable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Interfaces/Deliverable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Interfaces/Exchangable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Interfaces/Exchangable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Interfaces/Orderable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Interfaces/Orderable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Interfaces/Receivable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Interfaces/Receivable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Interfaces/Returnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Interfaces/Returnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Order/Exceptions/OrderNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Order/Exceptions/OrderNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Order/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Order/OrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Payment/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/AccountType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Payment/AccountType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Exception/InsufficientFundsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Payment/Exception/InsufficientFundsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Exception/NonExistentAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Payment/Exception/NonExistentAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Payment/Payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Payment/PaymentStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Payment/PaymentStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Person/Courier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Person/Courier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Person/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Person/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Person/CustomerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Person/CustomerType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Person/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Product/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Exceptions/OutOfStockException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Product/Exceptions/OutOfStockException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Exceptions/ProductNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Product/Exceptions/ProductNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Product/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Product/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Product/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shipment/CustomExceptions/ShipmentNotPaidException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Shipment/CustomExceptions/ShipmentNotPaidException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shipment/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Shipment/Delivery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shipment/Shipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Shipment/Shipment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shop/InvalidRatingException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Shop/InvalidRatingException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SolvdLaba/OnlineShop/Shop/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Shop/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Shipment/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Shipment/Delivery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Shop/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Shop/Shop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -63,15 +37,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/L-7490/IdeaProjects/SolvdLaba-master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/L-7490/IdeaProjects/SolvdLaba-master",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\L-7490\IdeaProjects\SolvdLaba-master" />
@@ -224,12 +201,59 @@
       <option name="project" value="LOCAL" />
       <updated>1701412658685</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Commit">
+      <option name="closed" value="true" />
+      <created>1701412829960</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701412829960</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="HIGHLIGHTERS">
+                <map>
+                  <entry key="CURRENT_BRANCH" value="false" />
+                  <entry key="MERGE_COMMITS" value="false" />
+                  <entry key="MY_COMMITS" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nn" />
     <MESSAGE value="Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Main.java</url>
+          <line>21</line>
+          <properties class="com.solvd.laba.onlineshop.Main" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/solvd/laba/onlineshop/Main.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,6 +1,7 @@
 package com.solvd.laba.onlineshop;
 
 
+import com.solvd.laba.onlineshop.Interfaces.ShopInterface;
 import com.solvd.laba.onlineshop.Person.Courier;
 import com.solvd.laba.onlineshop.Person.Customer;
 import com.solvd.laba.onlineshop.Shop.Shop;
@@ -43,10 +44,10 @@ public class Main {
         Stock stock5 = new Stock(product5, 10);
         productList.add(stock5);
 
-
-
-       LOGGER.info("Product list: "+productList);
-
+        System.out.println("Products in stock");
+        for (Stock product : productList) {
+            System.out.println(product.getProduct());
+        }
 
 
 

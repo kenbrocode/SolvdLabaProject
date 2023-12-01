@@ -6,7 +6,7 @@ import com.solvd.laba.onlineshop.Person.Courier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class Delivery implements Deliverable {
+abstract class Delivery implements Deliverable {
     public static final Logger LOGGER = LogManager.getLogger(Delivery.class);
     private String address;
     private Order order;

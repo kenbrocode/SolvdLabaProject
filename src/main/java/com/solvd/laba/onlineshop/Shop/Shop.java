@@ -2,6 +2,7 @@ package com.solvd.laba.onlineshop.Shop;
 
 
 import com.solvd.laba.onlineshop.Interfaces.Receivable;
+import com.solvd.laba.onlineshop.Interfaces.ShopInterface;
 import com.solvd.laba.onlineshop.Order.Exceptions.OrderNotFoundException;
 import com.solvd.laba.onlineshop.Interfaces.Orderable;
 import com.solvd.laba.onlineshop.Order.Order;
@@ -22,7 +23,7 @@ import java.io.IOException;
 import java.util.*;
 
 
-public class Shop implements Orderable, Receivable {
+public class Shop implements ShopInterface, Orderable, Receivable {
 
     private static final Logger LOGGER = LogManager.getLogger(Shop.class);
     private final String name;
