@@ -481,3 +481,111 @@ Below you can find all the available materials:
 07:08:07.164 [main] INFO  - Order %d has been shipped by the courier: %s
 
 07:08:08.082 [main] INFO  - rate: 3
+00:50:02.667 [main] INFO  - Shop created with the name: Feels Good Shop
+00:50:02.675 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+00:50:02.676 [main] INFO  - 	%s  %d
+
+00:50:02.676 [main] INFO  - 	%s  %d
+
+00:50:02.676 [main] INFO  - 	%s  %d
+
+00:50:02.676 [main] INFO  - 	%s  %d
+
+00:50:02.676 [main] INFO  - 	%s  %d
+
+18:32:54.176 [main] INFO  - Shop created with the name: Feels Good Shop
+18:32:54.216 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+18:32:54.218 [main] INFO  - 	Chair  50
+
+18:32:54.218 [main] INFO  - 	Desk  100
+
+18:32:54.219 [main] INFO  - 	Lamp  25
+
+18:32:54.219 [main] INFO  - 	Historybook  100
+
+18:32:54.219 [main] INFO  - 	Smartphone  500
+
+18:33:02.664 [main] INFO  - Here is your orderId: %d
+
+18:33:09.852 [main] INFO  - an update of your order list:
+18:33:09.863 [main] INFO  - Order{orderId=1, customer=1}
+19:42:21.184 [main] INFO  - Shop created with the name: Feels Good Shop
+19:42:21.192 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+19:42:21.194 [main] INFO  - 	Chair  50
+
+19:42:21.195 [main] INFO  - 	Desk  100
+
+19:42:21.195 [main] INFO  - 	Lamp  25
+
+19:42:21.195 [main] INFO  - 	Historybook  100
+
+19:42:21.195 [main] INFO  - 	Smartphone  500
+
+19:42:49.828 [main] INFO  - Shop created with the name: Feels Good Shop
+19:42:49.837 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+19:42:49.838 [main] INFO  - 	Chair  50
+
+19:42:49.838 [main] INFO  - 	Desk  100
+
+19:42:49.839 [main] INFO  - 	Lamp  25
+
+19:42:49.839 [main] INFO  - 	Historybook  100
+
+19:42:49.841 [main] INFO  - 	Smartphone  500
+
+19:43:00.832 [main] ERROR - An error occurred: null
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Scanner.java:947) ~[?:?]
+	at java.util.Scanner.next(Scanner.java:1602) ~[?:?]
+	at java.util.Scanner.nextDouble(Scanner.java:2573) ~[?:?]
+	at com.solvd.laba.ecommerceshop.Main.main(Main.java:142) ~[classes/:?]
+19:43:09.933 [main] INFO  - Shop created with the name: Feels Good Shop
+19:43:09.941 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+19:43:09.944 [main] INFO  - 	Chair  50
+
+19:43:09.944 [main] INFO  - 	Desk  100
+
+19:43:09.945 [main] INFO  - 	Lamp  25
+
+19:43:09.945 [main] INFO  - 	Historybook  100
+
+19:43:09.945 [main] INFO  - 	Smartphone  500
+
+19:46:59.813 [main] INFO  - Shop created with the name: Feels Good Shop
+19:46:59.820 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+19:46:59.824 [main] INFO  - 	Chair  50
+
+19:46:59.824 [main] INFO  - 	Desk  100
+
+19:46:59.824 [main] INFO  - 	Lamp  25
+
+19:46:59.825 [main] INFO  - 	Historybook  100
+
+19:46:59.825 [main] INFO  - 	Smartphone  500
+
+19:51:35.231 [main] INFO  - Shop created with the name: Feels Good Shop
+19:51:35.239 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+19:51:35.241 [main] INFO  - 	Chair  50
+
+19:51:35.241 [main] INFO  - 	Desk  100
+
+19:51:35.241 [main] INFO  - 	Lamp  25
+
+19:51:35.242 [main] INFO  - 	Historybook  100
+
+19:51:35.242 [main] INFO  - 	Smartphone  500
+

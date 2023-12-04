@@ -97,7 +97,9 @@ public class Shop implements ShopInterface, Orderable, Receivable {
     }
 
     public void showProductsInShop(){
-        productList.forEach(p -> LOGGER.info("\t%s  %d\n", p.getProduct().getName(), p.getProduct().getPrice()));
+        productList.stream()
+                .map(p -> String.format("\t%s  %d\n", p.getProduct().getName(), p.getProduct().getPrice()))
+                .forEach(LOGGER::info);
     }
 
     public int createOrder(Customer customer){

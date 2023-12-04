@@ -1,6 +1,7 @@
 package com.solvd.laba.ecommerceshop;
 
 
+import com.solvd.laba.ecommerceshop.Interfaces.ShopInterface;
 import com.solvd.laba.ecommerceshop.Person.Courier;
 import com.solvd.laba.ecommerceshop.Person.Customer;
 import com.solvd.laba.ecommerceshop.Shop.Shop;
@@ -19,6 +20,7 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
+import java.util.stream.Collectors;
 
 public class Main {
     private static final Logger LOGGER = LogManager.getLogger(Main.class);
@@ -48,9 +50,9 @@ public class Main {
         productList.add(stock5);
 
         System.out.println("Products in stock");
-        for (Stock product : productList) {
-            System.out.println(product.getProduct());
-        }
+        productList.stream()
+                .map(Stock::getProduct)
+                .forEach(System.out::println);
 
 
 
@@ -59,7 +61,9 @@ public class Main {
         shop.showProductsInShop();
         try (Scanner scanner = new Scanner(System.in)) {
 
-        System.out.println("Would you like to create an order?\n\t1- yes\n\t0- no");
+        System.out.println("1. Press 1 to create an order ");
+        System.out.println("2. Press 2 to search for a product by name ");
+        System.out.println("3. Press 3 to Filter products based on a max price threshold ");
         int choice = scanner.nextInt();
 
         if (choice == 1) {
@@ -116,7 +120,33 @@ public class Main {
             int rate = scanner.nextInt();
             Shop.clientShopRating(rate);
             scanner.close();
-        } else {
+        }
+        else if (choice == 2) {
+            System.out.println("Option 2: Search for a product by name.");
+
+            // Search for a product by name
+            System.out.println("Enter product name to search: ");
+            String productNameToSearch = scanner.next();
+            Optional<Stock> foundProduct = productList.stream()
+                    .filter(stock -> stock.getProduct().getName().equalsIgnoreCase(productNameToSearch))
+                    .findFirst();
+            if (foundProduct.isPresent()) {
+                System.out.println("Product found: " + foundProduct.get().getProduct());
+            } else {
+                System.out.println("Product not found.");
+            }
+        } else if (choice == 3) {
+            System.out.println("Option 3: Filter products based on a max price threshold.");
+
+            // Filtering products with price less than a certain amount
+            System.out.println("Enter price threshold: ");
+            double filterPrice = scanner.nextDouble();
+            List<Stock> filteredProducts = productList.stream()
+                    .filter(stock -> stock.getProduct().getPrice() < filterPrice)
+                    .collect(Collectors.toList());
+            System.out.println("Products with price less than " + filterPrice + ": " + filteredProducts);
+        }
+        else {
             shop.showWelcomeMessage();
             shop.showProductsInShop();
             shop.showGoodbyeMessage();
@@ -137,7 +167,8 @@ public class Main {
 
 // Function: Convert product name to uppercase
             Function<Product, String> productNameToUppercase = product -> product.getName().toUpperCase();
-        } } catch (Exception e) {
+        }
+        } catch (Exception e) {
             LOGGER.error("An error occurred: " + e.getMessage(), e);
             }
         }
