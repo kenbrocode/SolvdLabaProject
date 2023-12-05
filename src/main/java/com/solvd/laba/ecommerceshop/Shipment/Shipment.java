@@ -18,7 +18,7 @@ public class Shipment extends Delivery{
     }
 
     public static void ship(Courier courier, Shipment shipment){
-        if (shipment.getOrder().getOrderStatus() == OrderStatus.CONFIRMED){
+        if (shipment.getOrder().getOrderStatus() == OrderStatus.CREATED){
 
             LOGGER.info("Order %d has been shipped by the courier: %s\n", shipment.order.getOrderId(), courier.getName());
             courier.removeShipment(shipment);

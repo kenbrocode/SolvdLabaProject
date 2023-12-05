@@ -3,13 +3,14 @@ package com.solvd.laba.ecommerceshop.Person;
 import com.solvd.laba.ecommerceshop.Order.Order;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public class Customer extends Person{
 
     private static int nextCustomerId = 1;
     private final int customerId;
     private CustomerType customerType = CustomerType.BASIC;
-    private LinkedList<Order> orders;
+    private List<Order> orders;
     private String address;
 
     public Customer(String clientFirstName, String clientSurname){
@@ -22,7 +23,7 @@ public class Customer extends Person{
         return customerId;
     }
 
-    public LinkedList<Order> getOrders(){
+    public List<Order> getOrders(){
         return orders;
     }
 

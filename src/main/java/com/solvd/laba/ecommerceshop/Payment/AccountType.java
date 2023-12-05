@@ -2,15 +2,23 @@ package com.solvd.laba.ecommerceshop.Payment;
 
 public enum AccountType{
 
-    VISA("VISA"), MASTERCARD("MASTERCARD"), EXPRESS("EXPRESS");
+    VISA("Visa", "V"),
+    MASTERCARD("MasterCard", "MC"),
+    AMEX("American Express", "AE");
 
-    private String accountType;
+    private final String typeName;
+    private final String abbreviation;
 
-    AccountType(String accountType){
-        this.accountType = accountType;
+    AccountType(String typeName, String abbreviation) {
+        this.typeName = typeName;
+        this.abbreviation = abbreviation;
     }
 
-    public String getAccountType(){
-        return accountType;
+    public String getTypeName() {
+        return typeName;
+    }
+
+    public String getAbbreviation() {
+        return abbreviation;
     }
 }

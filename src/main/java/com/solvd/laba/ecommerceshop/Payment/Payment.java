@@ -73,7 +73,7 @@ public class Payment {
         if (funds - value >= 0){
             funds -= value;
             paymentStatus = PaymentStatus.SUCCEEDED;
-            order.setOrderStatus(OrderStatus.CONFIRMED);
+            order.setOrderStatus(OrderStatus.CREATED);
         } else{
             paymentStatus = PaymentStatus.REJECTED;
             try{

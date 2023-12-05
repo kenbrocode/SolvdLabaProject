@@ -1,18 +1,19 @@
 package com.solvd.laba.ecommerceshop.Order;
 
-public enum OrderStatus{
-    CREATED("CREATED"), WAITING_FOR_PAYMENT("WAITING FOR PAYMENT"), CONFIRMED("CONFIRMED"), DECLINED("DECLINED"), CANCELLED("CANCELLED");
-    String status;
+public enum OrderStatus {
+    CREATED("Created"),
+    CANCELLED("Cancelled"),
+    IN_PROGRESS("In Progress"),
+    DELIVERED("Delivered");
 
-    OrderStatus(String status){
-        this.status = status;
+    private final String statusName;
+
+    OrderStatus(String statusName) {
+        this.statusName = statusName;
     }
 
-    @Override
-    public String toString(){
-        return "OrderStatus{" +
-                "status='" + status + '\'' +
-                '}';
-    }
+    public String getStatusName() {
+        return statusName;
 
+    }
 }

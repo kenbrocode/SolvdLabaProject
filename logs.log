@@ -589,3 +589,429 @@ Below you can find all the available materials:
 
 19:51:35.242 [main] INFO  - 	Smartphone  500
 
+22:39:27.058 [main] INFO  - Shop created with the name: Feels Good Shop
+22:39:27.066 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+22:39:27.068 [main] INFO  - 	Chair  50
+
+22:39:27.068 [main] INFO  - 	Desk  100
+
+22:39:27.068 [main] INFO  - 	Lamp  25
+
+22:39:27.068 [main] INFO  - 	Historybook  100
+
+22:39:27.068 [main] INFO  - 	Smartphone  500
+
+22:40:17.674 [main] INFO  - Shop created with the name: Feels Good Shop
+22:40:17.683 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+22:40:17.685 [main] INFO  - 	Chair  50
+
+22:40:17.685 [main] INFO  - 	Desk  100
+
+22:40:17.685 [main] INFO  - 	Lamp  25
+
+22:40:17.686 [main] INFO  - 	Historybook  100
+
+22:40:17.686 [main] INFO  - 	Smartphone  500
+
+22:40:24.813 [main] INFO  - Here is your orderId: %d
+
+22:40:29.290 [main] INFO  - an update of your order list:
+22:40:29.296 [main] INFO  - Order{orderId=1, customer=1}
+22:41:01.994 [main] INFO  - Validating your account
+22:41:01.996 [main] INFO  - OrderStatus{status='CONFIRMED'}
+22:41:01.997 [main] INFO  - PaymentStatus{status='SUCCEDED'}
+22:41:01.997 [main] INFO  - Your order has been paid, below you can find your receipt
+22:41:02.006 [main] INFO  - Order %d has been shipped by the courier: %s
+
+22:41:05.792 [main] INFO  - rate: 4
+22:41:14.064 [main] INFO  - Shop created with the name: Feels Good Shop
+22:41:14.071 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+22:41:14.073 [main] INFO  - 	Chair  50
+
+22:41:14.074 [main] INFO  - 	Desk  100
+
+22:41:14.074 [main] INFO  - 	Lamp  25
+
+22:41:14.074 [main] INFO  - 	Historybook  100
+
+22:41:14.074 [main] INFO  - 	Smartphone  500
+
+22:41:24.081 [main] INFO  - Shop created with the name: Feels Good Shop
+22:41:24.125 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+22:41:24.127 [main] INFO  - 	Chair  50
+
+22:41:24.127 [main] INFO  - 	Desk  100
+
+22:41:24.128 [main] INFO  - 	Lamp  25
+
+22:41:24.128 [main] INFO  - 	Historybook  100
+
+22:41:24.128 [main] INFO  - 	Smartphone  500
+
+22:41:32.424 [main] INFO  - Here is your orderId: %d
+
+22:41:38.533 [main] INFO  - an update of your order list:
+22:41:38.541 [main] INFO  - Order{orderId=1, customer=1}
+22:41:59.348 [main] INFO  - Validating your account
+22:41:59.351 [main] INFO  - OrderStatus{status='CONFIRMED'}
+22:41:59.352 [main] INFO  - PaymentStatus{status='SUCCEDED'}
+22:41:59.352 [main] INFO  - Your order has been paid, below you can find your receipt
+22:41:59.356 [main] INFO  - Order %d has been shipped by the courier: %s
+
+22:52:00.383 [main] INFO  - Shop created with the name: Feels Good Shop
+22:52:00.396 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+22:52:00.399 [main] INFO  - 	Chair  50
+
+22:52:00.400 [main] INFO  - 	Desk  100
+
+22:52:00.400 [main] INFO  - 	Lamp  25
+
+22:52:00.400 [main] INFO  - 	Historybook  100
+
+22:52:00.400 [main] INFO  - 	Smartphone  500
+
+22:52:06.166 [main] INFO  - Here is your orderId: 5179
+22:52:11.385 [main] INFO  - an update of your order list:
+22:52:11.394 [main] INFO  - Order{orderId=5179, customer=1}
+22:52:26.499 [main] ERROR - An error occurred: null
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Scanner.java:947) ~[?:?]
+	at java.util.Scanner.next(Scanner.java:1602) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2267) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2221) ~[?:?]
+	at com.solvd.laba.ecommerceshop.Main.main(Main.java:103) ~[classes/:?]
+22:52:35.363 [main] INFO  - Shop created with the name: Feels Good Shop
+22:52:35.373 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+22:52:35.375 [main] INFO  - 	Chair  50
+
+22:52:35.376 [main] INFO  - 	Desk  100
+
+22:52:35.376 [main] INFO  - 	Lamp  25
+
+22:52:35.376 [main] INFO  - 	Historybook  100
+
+22:52:35.376 [main] INFO  - 	Smartphone  500
+
+22:52:41.578 [main] INFO  - Here is your orderId: 6016
+22:52:46.906 [main] INFO  - an update of your order list:
+22:52:46.913 [main] INFO  - Order{orderId=6016, customer=1}
+22:53:05.505 [main] INFO  - Validating your account
+22:53:05.508 [main] INFO  - OrderStatus{status='CONFIRMED'}
+22:53:05.509 [main] INFO  - PaymentStatus{status='SUCCEDED'}
+22:53:05.509 [main] INFO  - Your order has been paid, below you can find your receipt
+22:53:05.510 [main] INFO  - Here is your orderId: 5389
+22:55:02.739 [main] INFO  - Shop created with the name: Feels Good Shop
+22:55:02.748 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+22:55:02.750 [main] INFO  - 	Chair  50
+
+22:55:02.750 [main] INFO  - 	Desk  100
+
+22:55:02.750 [main] INFO  - 	Lamp  25
+
+22:55:02.751 [main] INFO  - 	Historybook  100
+
+22:55:02.751 [main] INFO  - 	Smartphone  500
+
+22:55:07.103 [main] INFO  - Here is your orderId: 2740
+22:55:12.344 [main] INFO  - an update of your order list:
+22:55:12.352 [main] INFO  - Order{orderId=2740, customer=1}
+22:55:33.850 [main] INFO  - Validating your account
+22:55:33.854 [main] INFO  - OrderStatus{status='CONFIRMED'}
+22:55:33.855 [main] INFO  - PaymentStatus{status='SUCCEDED'}
+22:55:33.855 [main] INFO  - Your order has been paid, below you can find your receipt
+22:55:33.860 [main] INFO  - Order %d has been shipped by the courier: %s
+
+23:20:08.134 [main] INFO  - rate: 4
+23:21:24.165 [main] INFO  - Shop created with the name: Feels Good Shop
+23:21:24.173 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+23:21:24.175 [main] INFO  - 	Chair  50
+
+23:21:24.175 [main] INFO  - 	Desk  100
+
+23:21:24.175 [main] INFO  - 	Lamp  25
+
+23:21:24.175 [main] INFO  - 	Historybook  100
+
+23:21:24.175 [main] INFO  - 	Smartphone  500
+
+23:21:29.033 [main] INFO  - Here is your orderId: 5303
+23:21:43.291 [main] INFO  - an update of your order list:
+23:21:43.297 [main] INFO  - Order{orderId=5303, customer=1}
+23:22:22.506 [main] INFO  - Validating your account
+23:22:22.508 [main] INFO  - OrderStatus{status='CONFIRMED'}
+23:22:22.508 [main] INFO  - PaymentStatus{status='SUCCEDED'}
+23:22:22.508 [main] INFO  - Your order has been paid, below you can find your receipt
+23:22:22.512 [main] INFO  - Order %d has been shipped by the courier: %s
+
+23:22:22.512 [main] ERROR - An error occurred: null
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Scanner.java:947) ~[?:?]
+	at java.util.Scanner.next(Scanner.java:1602) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2267) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2221) ~[?:?]
+	at com.solvd.laba.ecommerceshop.Main.main(Main.java:126) ~[classes/:?]
+23:23:01.315 [main] INFO  - Shop created with the name: Feels Good Shop
+23:23:01.324 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+23:23:01.326 [main] INFO  - 	Chair  50
+
+23:23:01.327 [main] INFO  - 	Desk  100
+
+23:23:01.327 [main] INFO  - 	Lamp  25
+
+23:23:01.327 [main] INFO  - 	Historybook  100
+
+23:23:01.327 [main] INFO  - 	Smartphone  500
+
+23:24:12.105 [main] INFO  - Shop created with the name: Feels Good Shop
+23:24:12.114 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+23:24:12.116 [main] INFO  - 	Chair  50
+
+23:24:12.116 [main] INFO  - 	Desk  100
+
+23:24:12.116 [main] INFO  - 	Lamp  25
+
+23:24:12.117 [main] INFO  - 	Historybook  100
+
+23:24:12.117 [main] INFO  - 	Smartphone  500
+
+23:24:18.197 [main] INFO  - Here is your orderId: 395
+23:24:23.357 [main] INFO  - an update of your order list:
+23:24:23.364 [main] INFO  - Order{orderId=395, customer=1}
+23:26:11.925 [main] INFO  - Shop created with the name: Feels Good Shop
+23:26:11.932 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+23:26:11.934 [main] INFO  - 	Chair  50
+
+23:26:11.935 [main] INFO  - 	Desk  100
+
+23:26:11.935 [main] INFO  - 	Lamp  25
+
+23:26:11.935 [main] INFO  - 	Historybook  100
+
+23:26:11.935 [main] INFO  - 	Smartphone  500
+
+23:26:18.220 [main] INFO  - Here is your orderId: 5545
+23:26:25.245 [main] INFO  - an update of your order list:
+23:26:25.251 [main] INFO  - Order{orderId=5545, customer=1}
+23:27:09.718 [main] INFO  - Shop created with the name: Feels Good Shop
+23:27:09.728 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+23:27:09.731 [main] INFO  - 	Chair  50
+
+23:27:09.731 [main] INFO  - 	Desk  100
+
+23:27:09.732 [main] INFO  - 	Lamp  25
+
+23:27:09.732 [main] INFO  - 	Historybook  100
+
+23:27:09.732 [main] INFO  - 	Smartphone  500
+
+23:27:15.816 [main] INFO  - Here is your orderId: 8882
+23:27:21.691 [main] INFO  - an update of your order list:
+23:27:21.699 [main] INFO  - Order{orderId=8882, customer=1}
+23:27:56.847 [main] INFO  - Shop created with the name: Feels Good Shop
+23:27:56.855 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+23:27:56.856 [main] INFO  - 	Chair  50
+
+23:27:56.857 [main] INFO  - 	Desk  100
+
+23:27:56.857 [main] INFO  - 	Lamp  25
+
+23:27:56.857 [main] INFO  - 	Historybook  100
+
+23:27:56.857 [main] INFO  - 	Smartphone  500
+
+23:28:01.975 [main] INFO  - Here is your orderId: 2752
+23:28:07.698 [main] INFO  - an update of your order list:
+23:28:07.703 [main] INFO  - Order{orderId=2752, customer=1}
+23:28:43.512 [main] INFO  - Shop created with the name: Feels Good Shop
+23:28:43.520 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+23:28:43.521 [main] INFO  - 	Chair  50
+
+23:28:43.522 [main] INFO  - 	Desk  100
+
+23:28:43.522 [main] INFO  - 	Lamp  25
+
+23:28:43.522 [main] INFO  - 	Historybook  100
+
+23:28:43.522 [main] INFO  - 	Smartphone  500
+
+23:28:48.719 [main] INFO  - Here is your orderId: 2362
+23:28:54.213 [main] INFO  - an update of your order list:
+23:28:54.219 [main] INFO  - Order{orderId=2362, customer=1}
+23:30:01.340 [main] INFO  - Validating your account
+23:30:01.342 [main] INFO  - OrderStatus{status='CONFIRMED'}
+23:30:01.343 [main] INFO  - PaymentStatus{status='SUCCEDED'}
+23:30:01.343 [main] INFO  - Your order has been paid, below you can find your receipt
+23:30:01.347 [main] INFO  - Order %d has been shipped by the courier: %s
+
+23:30:05.186 [main] INFO  - rate: 5
+23:37:26.863 [main] INFO  - Shop created with the name: Feels Good Shop
+23:37:26.872 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+23:37:26.874 [main] INFO  - 	Chair  50
+
+23:37:26.874 [main] INFO  - 	Desk  100
+
+23:37:26.874 [main] INFO  - 	Lamp  25
+
+23:37:26.874 [main] INFO  - 	Historybook  100
+
+23:37:26.874 [main] INFO  - 	Smartphone  500
+
+23:38:01.070 [main] INFO  - Shop created with the name: Feels Good Shop
+23:38:01.078 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+23:38:01.080 [main] INFO  - 	Chair  50
+
+23:38:01.080 [main] INFO  - 	Desk  100
+
+23:38:01.080 [main] INFO  - 	Lamp  25
+
+23:38:01.081 [main] INFO  - 	Historybook  100
+
+23:38:01.081 [main] INFO  - 	Smartphone  500
+
+23:38:27.456 [main] INFO  - Shop created with the name: Feels Good Shop
+23:38:27.463 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+23:38:27.465 [main] INFO  - 	Chair  50
+
+23:38:27.465 [main] INFO  - 	Desk  100
+
+23:38:27.466 [main] INFO  - 	Lamp  25
+
+23:38:27.466 [main] INFO  - 	Historybook  100
+
+23:38:27.467 [main] INFO  - 	Smartphone  500
+
+01:11:52.377 [main] INFO  - Products in stock
+01:11:52.455 [main] INFO  - Shop created with the name: Feels Good Shop
+01:11:52.469 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+01:11:52.471 [main] INFO  - 	Chair  50
+
+01:11:52.471 [main] INFO  - 	Desk  100
+
+01:11:52.471 [main] INFO  - 	Lamp  25
+
+01:11:52.471 [main] INFO  - 	Algebra  100
+
+01:11:52.471 [main] INFO  - 	Smartphone  500
+
+03:05:59.800 [main] INFO  - Shop created with the name: Feels Good Shop
+03:05:59.819 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+03:05:59.823 [main] INFO  - 	Chair  50
+
+03:05:59.823 [main] INFO  - 	Desk  100
+
+03:05:59.823 [main] INFO  - 	Lamp  25
+
+03:05:59.823 [main] INFO  - 	Algebra  100
+
+03:05:59.824 [main] INFO  - 	Smartphone  500
+
+03:06:23.676 [main] INFO  - Shop created with the name: Feels Good Shop
+03:06:23.697 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+03:06:23.699 [main] INFO  - 	Chair  50
+
+03:06:23.699 [main] INFO  - 	Desk  100
+
+03:06:23.699 [main] INFO  - 	Lamp  25
+
+03:06:23.700 [main] INFO  - 	Algebra  100
+
+03:06:23.700 [main] INFO  - 	Smartphone  500
+
+03:06:28.120 [main] INFO  - Here is your orderId: 3693
+03:06:34.852 [main] INFO  - an update of your order list:
+03:06:34.860 [main] INFO  - Order{orderId=3693, customer=1}
+03:07:43.538 [main] INFO  - Validating your account
+03:07:43.540 [main] INFO  - CREATED
+03:07:43.541 [main] INFO  - PaymentStatus{status='SUCCEDED'}
+03:07:43.541 [main] INFO  - Your order has been paid, below you can find your receipt
+03:07:43.544 [main] INFO  - Order %d has been shipped by the courier: %s
+
+03:07:45.924 [main] INFO  - rate: 4
+03:08:19.174 [main] INFO  - Shop created with the name: Feels Good Shop
+03:08:19.195 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+03:08:19.197 [main] INFO  - 	Chair  50
+
+03:08:19.197 [main] INFO  - 	Desk  100
+
+03:08:19.197 [main] INFO  - 	Lamp  25
+
+03:08:19.197 [main] INFO  - 	Algebra  100
+
+03:08:19.197 [main] INFO  - 	Smartphone  500
+
+03:08:25.570 [main] INFO  - Here is your orderId: 9621
+03:08:31.854 [main] INFO  - an update of your order list:
+03:08:31.861 [main] INFO  - Order{orderId=9621, customer=1}
+03:08:55.892 [main] INFO  - Validating your account
+03:08:55.894 [main] INFO  - CREATED
+03:08:55.895 [main] INFO  - PaymentStatus{status='SUCCEDED'}
+03:08:55.895 [main] INFO  - Your order has been paid, below you can find your receipt
+03:08:55.898 [main] INFO  - Order %d has been shipped by the courier: %s
+
+03:08:57.751 [main] INFO  - rate: 3
+03:09:30.249 [main] INFO  - Shop created with the name: Feels Good Shop
+03:09:30.268 [main] INFO  - Welcome to our beloved %s
+Below you can find all the available materials:
+
+03:09:30.270 [main] INFO  - 	Chair  50
+
+03:09:30.270 [main] INFO  - 	Desk  100
+
+03:09:30.270 [main] INFO  - 	Lamp  25
+
+03:09:30.270 [main] INFO  - 	Algebra  100
+
+03:09:30.271 [main] INFO  - 	Smartphone  500
+
+03:09:34.941 [main] INFO  - Here is your orderId: 7583
+03:09:50.950 [main] INFO  - an update of your order list:
+03:09:50.956 [main] INFO  - Order{orderId=7583, customer=1}
+03:10:11.751 [main] INFO  - Validating your account
+03:10:11.754 [main] INFO  - CREATED
+03:10:11.755 [main] INFO  - PaymentStatus{status='SUCCEDED'}
+03:10:11.755 [main] INFO  - Your order has been paid, below you can find your receipt
+03:10:11.759 [main] INFO  - Order %d has been shipped by the courier: %s
+
+03:10:14.169 [main] INFO  - rate: 4

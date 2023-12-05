@@ -2,6 +2,7 @@ package com.solvd.laba.ecommerceshop;
 
 
 import com.solvd.laba.ecommerceshop.Interfaces.ShopInterface;
+import com.solvd.laba.ecommerceshop.Order.Order;
 import com.solvd.laba.ecommerceshop.Person.Courier;
 import com.solvd.laba.ecommerceshop.Person.Customer;
 import com.solvd.laba.ecommerceshop.Shop.Shop;
@@ -26,30 +27,16 @@ public class Main {
     private static final Logger LOGGER = LogManager.getLogger(Main.class);
     public static void main(String[] args) {
 
-
-//adding products from different cathegories
         List<Stock> productList = new ArrayList<>();
-        Product product1 = new Product("Chair", 50, Category.HOMEGOODS);
-        Stock stock1 = new Stock(product1,50);
-        productList.add(stock1);
 
-        Product product2 = new Product("Desk", 100, Category.HOMEGOODS);
-        Stock stock2 = new Stock(product2, 30);
-        productList.add(stock2);
+        // Using reflection to create instances of products and add them to the productList
+        productList.add(new Stock(Product.createProduct("Chair", 50, Category.HOMEGOODS), 50));
+        productList.add(new Stock(Product.createProduct("Desk", 100, Category.HOMEGOODS), 30));
+        productList.add(new Stock(Product.createProduct("Lamp", 25, Category.HOMEGOODS), 20));
+        productList.add(new Stock(Product.createProduct("Algebra", 100, Category.BOOKS), 15));
+        productList.add(new Stock(Product.createProduct("Smartphone", 500, Category.ELECTRONICS), 10));
 
-        Product product3 = new Product("Lamp", 25, Category.HOMEGOODS);
-        Stock stock3 = new Stock(product3, 20);
-        productList.add(stock3);
-
-        Product product4 = new Product("Historybook", 100, Category.BOOKS);
-        Stock stock4 = new Stock(product4, 15);
-        productList.add(stock4);
-
-        Product product5 = new Product("Smartphone", 500, Category.ELECTRONICS);
-        Stock stock5 = new Stock(product5, 10);
-        productList.add(stock5);
-
-        System.out.println("Products in stock");
+        System.out.println("Products in stock:");
         productList.stream()
                 .map(Stock::getProduct)
                 .forEach(System.out::println);
@@ -63,7 +50,9 @@ public class Main {
 
         System.out.println("1. Press 1 to create an order ");
         System.out.println("2. Press 2 to search for a product by name ");
-        System.out.println("3. Press 3 to Filter products based on a max price threshold ");
+        System.out.println("3. Press 3 to filter products based on a max price threshold ");
+        System.out.println("4. Press 4 to retrieve products within a price range ");
+        System.out.println("5. Press 5 to retrieve all products from a specific category ");
         int choice = scanner.nextInt();
 
         if (choice == 1) {
@@ -74,6 +63,7 @@ public class Main {
 
             int orderId = shop.createOrder(customer);
             shop.addOrder(orderId, shop.searchOrder(orderId));
+
 
             boolean stop = false;
 
@@ -92,7 +82,6 @@ public class Main {
             System.out.println("An update on your order:");
             shop.showUpdatedOrder(orderId);
 
-
             System.out.println("Payment ");
             System.out.println("Provide your card number:");
             int cardNumber = scanner.nextInt();
@@ -109,12 +98,15 @@ public class Main {
             Payment payment = new Payment(account, customer, shop.searchOrder(orderId), shippingAddress);
             shop.confirmOrder(orderId, payment);
 
+
+
             System.out.println("Your payment has been processed.");
 
             Shipment shipment = new Shipment(shippingAddress, shop.searchOrder(orderId), shop);
             Courier courier = new Courier("Ken", "Carter", "5555555");
             courier.addShipment(shipment);
             Shipment.ship(courier, shipment);
+            System.out.println("Order ID: " + orderId);
 
             System.out.println("How was your experience in the shop from 1-10");
             int rate = scanner.nextInt();
@@ -146,6 +138,33 @@ public class Main {
                     .collect(Collectors.toList());
             System.out.println("Products with price less than " + filterPrice + ": " + filteredProducts);
         }
+        else if (choice == 4) {
+            System.out.println("Option 4: Retrieve products within a price range.");
+
+            // Retrieve products within a price range
+            System.out.println("Enter minimum price: ");
+            double minPrice = scanner.nextDouble();
+            System.out.println("Enter maximum price: ");
+            double maxPrice = scanner.nextDouble();
+
+            List<Stock> productsInRange = productList.stream()
+                    .filter(stock -> stock.getProduct().getPrice() >= minPrice && stock.getProduct().getPrice() <= maxPrice)
+                    .collect(Collectors.toList());
+            System.out.println("Products within price range $" + minPrice + " - $" + maxPrice + ": " + productsInRange);
+        }
+        else if (choice == 5) {
+            System.out.println("Option 5: Retrieve all products from a specific category.");
+
+            // Retrieving all products from a specific category
+            System.out.println("Enter category name (HOMEGOODS, BOOKS, ELECTRONICS): ");
+            String categoryName = scanner.next();
+            Category category = Category.valueOf(categoryName.toUpperCase());
+
+            List<Stock> productsFromCategory = productList.stream()
+                    .filter(stock -> stock.getProduct().getCategory() == category)
+                    .collect(Collectors.toList());
+            System.out.println("Products from " + category.getCategoryName() + ": " + productsFromCategory);
+        }
         else {
             shop.showWelcomeMessage();
             shop.showProductsInShop();
@@ -154,6 +173,7 @@ public class Main {
             int rate = scanner.nextInt();
 
             Shop.clientShopRating(rate);
+
             scanner.close();
 
             // Predicate: Check if a product's price is above a certain threshold

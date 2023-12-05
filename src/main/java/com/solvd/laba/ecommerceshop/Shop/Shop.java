@@ -27,7 +27,7 @@ public class Shop implements ShopInterface, Orderable, Receivable {
 
     private static final Logger LOGGER = LogManager.getLogger(Shop.class);
     private final String name;
-    private LinkedList<Order> orders;
+    private List<Order> orders;
     private List<Stock> productList;
     private Map<Integer, Order> ordersMap = new HashMap<>();
 
@@ -104,9 +104,15 @@ public class Shop implements ShopInterface, Orderable, Receivable {
 
     public int createOrder(Customer customer){
         Order order = new Order(customer, this);
+        order.setOrderId(generateOrderId()); // Set the order ID for the newly created order
         orders.add(order);
-        LOGGER.info("Here is your orderId: %d\n", order.getOrderId());
+        LOGGER.info("Here is your orderId: " + order.getOrderId());
         return order.getOrderId();
+    }
+
+    private int generateOrderId() {
+        Random random = new Random();
+        return random.nextInt(10000);
     }
 
     @Override
@@ -199,7 +205,7 @@ public class Shop implements ShopInterface, Orderable, Receivable {
         order.CalculateTotal();
         applyDiscount(orderId, upgradeCustomer(orderId));
         if (Payment.validateAccount(payment.getAccount()) && payment.pay(order.getTotal())){
-            order.setOrderStatus(OrderStatus.CONFIRMED);
+            order.setOrderStatus(OrderStatus.CREATED);
             LOGGER.info(order.getOrderStatus());
             LOGGER.info(payment.getPaymentStatus());
             LOGGER.info("Your order has been paid, below you can find your receipt");
