@@ -6,18 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="66d0a3d4-8dd8-47e6-99da-80b11ba2cedf" name="Changes" comment="Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Order/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Order/OrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Payment/AccountType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Payment/AccountType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Payment/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Payment/Payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Person/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Person/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Person/CustomerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Person/CustomerType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Product/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Product/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Product/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Shipment/Shipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Shipment/Shipment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Shop/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Shop/Shop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701662009121</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Commit">
+      <option name="closed" value="true" />
+      <created>1701774687932</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701774687932</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
