@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66d0a3d4-8dd8-47e6-99da-80b11ba2cedf" name="Changes" comment="Commit">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/products_list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/CustomLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/CustomLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Interfaces/Deliverable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Interfaces/Deliverable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Interfaces/Exchangable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Interfaces/Exchangable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Interfaces/Receivable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Interfaces/Receivable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Interfaces/Returnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Interfaces/Returnable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Interfaces/ShopInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Interfaces/ShopInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
