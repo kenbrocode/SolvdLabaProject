@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66d0a3d4-8dd8-47e6-99da-80b11ba2cedf" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/multithreading/connectionpool/Connection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/multithreading/connectionpool/ConnectionImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/multithreading/connectionpool/ConnectionPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/multithreading/connectionpool/ConnectionPoolFuture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/multithreading/threads/FileReaderRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/multithreading/threads/FileWriterThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/shop/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/shop/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/utils/InitializeAccounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/utils/InitializeAccounts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +62,7 @@
       <command value="67891456" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.ConnectionPoolFuture">
+  <component name="RunManager" selected="Application.com.solvd.laba.ecommerceshop.Main">
     <configuration name="ConnectionImplementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.solvd.laba.ecommerceshop.multithreading.connectionpool.ConnectionImplementation" />
       <module name="solvdlaba" />
@@ -135,9 +130,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.solvd.laba.ecommerceshop.Main" />
         <item itemvalue="Application.ConnectionPoolFuture" />
         <item itemvalue="Application.ConnectionImplementation" />
-        <item itemvalue="Application.com.solvd.laba.ecommerceshop.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.com.solvd.laba.onlineshop.Run.Main" />
       </list>
@@ -304,7 +299,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702036279705</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Commit">
+      <option name="closed" value="true" />
+      <created>1702039319188</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1702039319188</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

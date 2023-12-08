@@ -10,6 +10,7 @@ import org.apache.logging.log4j.Logger;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.sql.SQLOutput;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -33,12 +34,12 @@ public class InitializeAccounts {
                     Account account = new Account(cardNumber, cvv, expirationDate, accountType, funds);
                     accounts.add(account);
                 } else {
-                    // Handle invalid account information from the file
+                    System.out.println("Invalid account information");
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
-            // Handle exception (e.g., log error, throw custom exception)
+
         }
 
         return accounts;

@@ -21,6 +21,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.SQLOutput;
 import java.util.*;
 
 
@@ -61,6 +62,7 @@ public class Shop implements ShopInterface, Orderable, Receivable {
             }
         } else{
             LOGGER.info(String.format("rate: %d", rate));
+            System.out.println("Thanks for your feedback!");
         }
     }
 
