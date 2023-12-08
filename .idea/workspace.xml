@@ -5,39 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66d0a3d4-8dd8-47e6-99da-80b11ba2cedf" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/utils/InitializeAccounts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/multithreading/connectionpool/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/multithreading/connectionpool/ConnectionImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/multithreading/connectionpool/ConnectionPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/multithreading/connectionpool/ConnectionPoolFuture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/multithreading/threads/FileReaderRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/multithreading/threads/FileWriterThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Interfaces/Deliverable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/interfaces/Deliverable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Interfaces/Exchangable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/interfaces/Exchangable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Interfaces/Orderable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/interfaces/Orderable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Interfaces/Receivable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/interfaces/Receivable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Interfaces/Returnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/interfaces/Returnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Interfaces/ShopInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/interfaces/ShopInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Order/Exceptions/OrderNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/order/exceptions/OrderNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Order/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/order/OrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Payment/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/payment/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Payment/AccountType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/payment/AccountType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Payment/Exception/InsufficientFundsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/payment/exceptions/InsufficientFundsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Payment/Exception/NonExistentAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/payment/exceptions/NonExistentAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Payment/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/payment/Payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Payment/PaymentStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/payment/PaymentStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Person/Courier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/person/Courier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Person/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/person/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Person/CustomerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/person/CustomerType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/person/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Product/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/item/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Product/Exceptions/OutOfStockException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/item/exceptions/OutOfStockException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Product/Exceptions/ProductNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/item/exceptions/ProductNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/item/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Product/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/item/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Shipment/CustomExceptions/ShipmentNotPaidException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/shipment/exceptions/ShipmentNotPaidException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Shipment/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/shipment/Delivery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Shipment/Shipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/shipment/Shipment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Shop/InvalidRatingException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/shop/exceptions/InvalidRatingException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/Shop/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/shop/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/products_list" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/accounts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +67,33 @@
       <command value="67891456" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.com.solvd.laba.ecommerceshop.Main">
+  <component name="RunManager" selected="Application.ConnectionPoolFuture">
+    <configuration name="ConnectionImplementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.solvd.laba.ecommerceshop.multithreading.connectionpool.ConnectionImplementation" />
+      <module name="solvdlaba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solvd.laba.ecommerceshop.multithreading.connectionpool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConnectionPoolFuture" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.solvd.laba.ecommerceshop.multithreading.connectionpool.ConnectionPoolFuture" />
+      <module name="solvdlaba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solvd.laba.ecommerceshop.multithreading.connectionpool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.SolvdLaba.OnlineShop.Main" />
       <module name="solvdlaba" />
@@ -134,6 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConnectionPoolFuture" />
+        <item itemvalue="Application.ConnectionImplementation" />
         <item itemvalue="Application.com.solvd.laba.ecommerceshop.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.com.solvd.laba.onlineshop.Run.Main" />
@@ -293,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701778135389</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Commit">
+      <option name="closed" value="true" />
+      <created>1702036279705</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1702036279705</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -194,21 +194,17 @@ public class Main {
 
             scanner.close();
 
-            // Predicate: Check if a item's price is above a certain threshold
-            Predicate<Product> isPriceAboveThreshold = product -> product.getPrice() > 100.0;
 
-// Consumer: Display item details
-            Consumer<Product> displayProductDetails = product ->LOGGER.info(product.getName() + " - $" + product.getPrice());
-
-// Supplier: Generate a random order ID
-            Supplier<Integer> generateOrderId = () -> (int) (Math.random() * 10000);
-
-// Function: Convert item name to uppercase
-            Function<Product, String> productNameToUppercase = product -> product.getName().toUpperCase();
         }
-        } catch (Exception e) {
+        } catch (InputMismatchException e) {
+           LOGGER.error("InputMismatchException: " + e.getMessage());
+           System.out.println("Invalid input. Please enter a valid choice.");
+       } catch (IllegalArgumentException | NoSuchElementException e) {
+   LOGGER.error("IllegalArgumentException or NoSuchElementException: " + e.getMessage());
+   System.out.println("Invalid argument or element not found.");
+} catch (Exception e) {
             LOGGER.error("An error occurred: " + e.getMessage(), e);
             }
-        }
+    }
 
     }
