@@ -11,16 +11,11 @@ import com.solvd.laba.ecommerceshop.payment.AccountType;
 import com.solvd.laba.ecommerceshop.payment.Payment;
 import com.solvd.laba.ecommerceshop.item.Stock;
 import com.solvd.laba.ecommerceshop.shipment.Shipment;
-import com.solvd.laba.ecommerceshop.utils.InitializeAccounts;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.*;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 public class Main {

@@ -6,11 +6,10 @@ import com.solvd.laba.ecommerceshop.order.OrderStatus;
 import com.solvd.laba.ecommerceshop.payment.exceptions.InsufficientFundsException;
 import com.solvd.laba.ecommerceshop.payment.exceptions.NonExistentAccount;
 import com.solvd.laba.ecommerceshop.person.Person;
-import com.solvd.laba.ecommerceshop.utils.InitializeAccounts;
+import com.solvd.laba.ecommerceshop.InitializeAccounts;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.HashSet;
 import java.util.Set;
 
 

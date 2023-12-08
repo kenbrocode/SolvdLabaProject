@@ -1,4 +1,4 @@
-package com.solvd.laba.ecommerceshop.utils;
+package com.solvd.laba.ecommerceshop;
 
 import com.solvd.laba.ecommerceshop.payment.Account;
 import com.solvd.laba.ecommerceshop.payment.AccountType;

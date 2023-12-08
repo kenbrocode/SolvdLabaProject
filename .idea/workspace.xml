@@ -32,19 +32,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/L-7490/IdeaProjects/SolvdLaba-master",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "inlay.hints"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/L-7490/IdeaProjects/SolvdLaba-master&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\L-7490\IdeaProjects\SolvdLaba-master" />
@@ -60,7 +60,7 @@
       <command value="67891456" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.ConnectionPoolFuture">
+  <component name="RunManager" selected="Application.com.solvd.laba.ecommerceshop.Main">
     <configuration name="ConnectionImplementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.solvd.laba.ecommerceshop.multithreading.connectionpool.ConnectionImplementation" />
       <module name="solvdlaba" />
@@ -128,9 +128,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.solvd.laba.ecommerceshop.Main" />
         <item itemvalue="Application.ConnectionPoolFuture" />
         <item itemvalue="Application.ConnectionImplementation" />
-        <item itemvalue="Application.com.solvd.laba.ecommerceshop.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.com.solvd.laba.onlineshop.Run.Main" />
       </list>
