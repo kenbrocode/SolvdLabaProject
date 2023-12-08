@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66d0a3d4-8dd8-47e6-99da-80b11ba2cedf" name="Changes" comment="Commit" />
+    <list default="true" id="66d0a3d4-8dd8-47e6-99da-80b11ba2cedf" name="Changes" comment="Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/multithreading/connectionpool/ConnectionPoolFuture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/laba/ecommerceshop/multithreading/connectionpool/ConnectionPoolFuture.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +61,7 @@
       <command value="67891456" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.com.solvd.laba.ecommerceshop.Main">
+  <component name="RunManager" selected="Application.ConnectionPoolFuture">
     <configuration name="ConnectionImplementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.solvd.laba.ecommerceshop.multithreading.connectionpool.ConnectionImplementation" />
       <module name="solvdlaba" />
@@ -126,9 +129,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.solvd.laba.ecommerceshop.Main" />
         <item itemvalue="Application.ConnectionPoolFuture" />
         <item itemvalue="Application.ConnectionImplementation" />
+        <item itemvalue="Application.com.solvd.laba.ecommerceshop.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.com.solvd.laba.onlineshop.Run.Main" />
       </list>
@@ -311,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702039808370</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Commit">
+      <option name="closed" value="true" />
+      <created>1702039966724</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1702039966724</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

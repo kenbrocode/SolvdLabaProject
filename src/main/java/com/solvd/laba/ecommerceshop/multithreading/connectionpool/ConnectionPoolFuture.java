@@ -21,7 +21,7 @@ public class ConnectionPoolFuture {
                     Connection connection = pool.getConnection();
                     System.out.println(Thread.currentThread().getName() + " started " + connection);
 
-                    TimeUnit.SECONDS.sleep(1);
+                   Thread.sleep(3000);
 
                     pool.releaseConnection(connection);
                     System.out.println(Thread.currentThread().getName() + " ended " + connection);
