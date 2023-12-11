@@ -11,13 +11,14 @@ public class Shipment extends Delivery{
     private Order order;
     private Shop shop;
 
-    public Shipment(String address, Order order, Shop shop){
-        super(address, order);
+    public Shipment(String address, Order order, Shop shop) {
+        super.address = address;
         this.order = order;
         this.shop = shop;
     }
 
-    public static void ship(Courier courier, Shipment shipment){
+
+    public static void shipping(Courier courier, Shipment shipment){
         if (shipment.getOrder().getOrderStatus() == OrderStatus.CREATED){
 
             LOGGER.info("order %d has been shipped by the courier: %s\n", shipment.order.getOrderId(), courier.getName());
@@ -31,15 +32,16 @@ public class Shipment extends Delivery{
         }
     }
 
-    public Order getOrder(){
+    public Order getOrder() {
         return order;
     }
 
-    public Shop getShop(){
+    public Shop getShop() {
         return shop;
     }
 
     public void ship(){
         LOGGER.info("shipped");
     }
+
 }

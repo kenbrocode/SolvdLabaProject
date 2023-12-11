@@ -21,6 +21,8 @@ import java.util.stream.Collectors;
 public class Main {
     private static final Logger LOGGER = LogManager.getLogger(Main.class);
 
+    private static Map<String, String> clientNames = new HashMap<>();
+
     public static void main(String[] args) {
 
         String accountsFilePath = "src/main/resources/accounts";
@@ -55,6 +57,10 @@ public class Main {
       System.out.println("3. Press 3 to filter products based on a max price threshold ");
       System.out.println("4. Press 4 to retrieve products within a price range ");
       System.out.println("5. Press 5 to retrieve all products from a specific category ");
+      System.out.println("6. Press 6 to manipulate product list ");
+      System.out.println("7. Press 7 to sort products by price ");
+      System.out.println("8. Press 8 to filter products by name length ");
+      System.out.println("9. Press 9 to count total quantity of a specific product ");
         int choice = scanner.nextInt();
 
         if (choice == 1) {
@@ -62,8 +68,10 @@ public class Main {
             String clientName = scanner.next();
             String clientSurName = scanner.next();
 
-          Customer customer = null;
-          if (StringUtils.isNotBlank(clientName) && StringUtils.isNotBlank(clientSurName)) {
+
+            Customer customer = null;
+            if (StringUtils.isNotBlank(clientName) && StringUtils.isNotBlank(clientSurName)) {
+                clientNames.put(clientName, clientSurName); // Storing client name and surname in the map
                 customer = new Customer(clientName, clientSurName);
 
             } else {
@@ -112,7 +120,7 @@ public class Main {
             Shipment shipment = new Shipment(shippingAddress, shop.searchOrder(orderId), shop);
             Courier courier = new Courier("Ken", "Carter", "5555555");
             courier.addShipment(shipment);
-            Shipment.ship(courier, shipment);
+            Shipment.shipping(courier, shipment);
             System.out.println("order ID: " + orderId);
 
             System.out.println("How was your experience in the shop from 1-10");
@@ -124,46 +132,51 @@ public class Main {
           System.out.println("Option 2: Search for a item by name.");
 
             // Search for a item by name
-          System.out.println("Enter item name to search: ");
+            System.out.println("Enter item name to search: ");
             String productNameToSearch = scanner.next();
+
             Optional<Stock> foundProduct = productList.stream()
-                    .filter(stock -> stock.getProduct().getName().equalsIgnoreCase(productNameToSearch))
+                    .filter(stock -> StringUtils.equalsIgnoreCase(stock.getProduct().getName(), productNameToSearch))
                     .findFirst();
+
             if (foundProduct.isPresent()) {
-              System.out.println("item found: " + foundProduct.get().getProduct());
+                System.out.println("Item found: " + foundProduct.get().getProduct());
             } else {
-              System.out.println("item not found.");
+                System.out.println("Item not found.");
             }
         } else if (choice == 3) {
-          System.out.println("Option 3: Filter products based on a max price threshold.");
-
-            // Filtering products with price less than a certain amount
-          System.out.println("Enter price threshold: ");
+            System.out.println("Enter price threshold: ");
             double filterPrice = scanner.nextDouble();
-            List<Stock> filteredProducts = productList.stream()
+
+            productList.stream()
                     .filter(stock -> stock.getProduct().getPrice() < filterPrice)
-                    .collect(Collectors.toList());
-          System.out.println("Products with price less than " + filterPrice + ": " + filteredProducts);
+                    .forEach(stock -> {
+                        System.out.println("Product: " + stock.getProduct().getName());
+                        System.out.println("Product Information: " + stock.getProduct().toString());
+                        String category = Optional.ofNullable(stock.getProduct().getCategory())
+                                .map(Category::getCategoryName)
+                                .orElse("No Category Found");
+                        System.out.println("Category: " + category);
+
+
+            });
         }
+
         else if (choice == 4) {
           System.out.println("Option 4: Retrieve products within a price range.");
-
-          System.out.println("Enter minimum price: ");
+            System.out.println("Enter minimum price: ");
             double minPrice = scanner.nextDouble();
-          System.out.println("Enter maximum price: ");
+            System.out.println("Enter maximum price: ");
             double maxPrice = scanner.nextDouble();
 
             Map<String, Stock> productsInRange = productList.stream()
                     .filter(stock -> stock.getProduct().getPrice() >= minPrice && stock.getProduct().getPrice() <= maxPrice)
                     .collect(Collectors.toMap(
-                            stock -> stock.getProduct().getName(),  // Key: Product name
-                            stock -> stock                      // Value: Stock object
+                            stock -> stock.getProduct().getName(),
+                            stock -> stock
                     ));
 
-          System.out.println("Products within price range $" + minPrice + " - $" + maxPrice + ":");
-            for (Map.Entry<String, Stock> entry : productsInRange.entrySet()) {
-              System.out.println("Product: " + entry.getKey() + ", Stock: " + entry.getValue());
-            }
+            productsInRange.forEach((productName, stock) -> System.out.println("Product: " + productName + ", Stock: " + stock));
         }
         else if (choice == 5) {
           System.out.println("Option 5: Retrieve all products from a specific category.");
@@ -178,6 +191,83 @@ public class Main {
                     .collect(Collectors.toList());
           System.out.println("Products from " + category.getCategoryName() + ": " + productsFromCategory);
         }
+        else if (choice == 6) {
+            System.out.println("Option 6: Manipulate product list");
+            System.out.println("1. Press 1 to reverse the product names");
+            System.out.println("2. Press 2 to capitalize all product names");
+            System.out.println("3. Press 3 to convert all product names to lowercase");
+            System.out.println("4. Press 4 to trim all product names");
+            int operationChoice = scanner.nextInt();
+
+            switch (operationChoice) {
+                case 1:
+                    productList.forEach(stock -> stock.getProduct().setName(StringUtils.reverse(stock.getProduct().getName())));
+                    break;
+                case 2:
+                    productList.forEach(stock -> stock.getProduct().setName(StringUtils.capitalize(stock.getProduct().getName())));
+                    break;
+                case 3:
+                    productList.forEach(stock -> stock.getProduct().setName(StringUtils.lowerCase(stock.getProduct().getName())));
+                    break;
+                case 4:
+                    productList.forEach(stock -> stock.getProduct().setName(StringUtils.trim(stock.getProduct().getName())));
+                    break;
+                default:
+                    System.out.println("Invalid operation choice.");
+                    break;
+            }
+
+            System.out.println("Updated Product List:");
+            productList.forEach(stock -> System.out.println(stock.getProduct()));
+        }
+        else if (choice == 7) {
+            System.out.println("Option 7: Sort products by price");
+            System.out.println("1. Press 1 to sort by price in ascending order");
+            System.out.println("2. Press 2 to sort by price in descending order");
+            int sortChoice = scanner.nextInt();
+
+            switch (sortChoice) {
+                case 1:
+                    Collections.sort(productList, Comparator.comparingDouble(stock -> stock.getProduct().getPrice()));
+                    break;
+                case 2:
+                    Collections.sort(productList, (stock1, stock2) ->
+                            Double.compare(stock2.getProduct().getPrice(), stock1.getProduct().getPrice()));
+                    break;
+                default:
+                    System.out.println("Invalid sort choice.");
+                    break;
+            }
+
+            // Display sorted products
+            productList.forEach(stock -> System.out.println("Product: " + stock.getProduct().getName() + ", Price: " + stock.getProduct().getPrice()));
+        }
+        else if (choice == 8) {
+            System.out.println("Option 8: Filter products by name length");
+            System.out.println("Enter name length to filter: ");
+            int nameLength = scanner.nextInt();
+
+            List<Stock> filteredProducts = productList.stream()
+                    .filter(stock -> stock.getProduct().getName().length() == nameLength)
+                    .collect(Collectors.toList());
+
+            System.out.println("Products with name length " + nameLength + ":");
+            filteredProducts.forEach(stock -> System.out.println("Product: " + stock.getProduct().getName()));
+        }
+        else if (choice == 9) {
+            System.out.println("Option 9: Count total quantity of a specific product");
+
+            System.out.println("Enter the name of the product to count its total quantity: ");
+            String productNameToCount = scanner.next();
+
+            long totalQuantity = productList.stream()
+                    .filter(stock -> stock.getProduct().getName().equalsIgnoreCase(productNameToCount))
+                    .mapToLong(Stock::getQuantity)
+                    .sum();
+
+            System.out.println("Total quantity of " + productNameToCount + " in stock: " + totalQuantity);
+        }
+
         else {
             shop.showWelcomeMessage();
             shop.showProductsInShop();
@@ -202,4 +292,4 @@ public class Main {
             }
     }
 
-    }
+}
